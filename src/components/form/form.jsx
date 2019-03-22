@@ -16,13 +16,13 @@ class Form extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleFullName(e) {
-    let value = e.target.value;
+    const value = e.target.value;
     this.setState(
       prevState => ({
         newUser: {
           ...prevState.newUser,
-          name: value
-        }
+          name: value,
+        },
       }),
       () => console.log('this.state.newUser', this.state.newUser)
     );
@@ -31,8 +31,8 @@ class Form extends Component {
   handleSubmit(event) {
     event.preventDefault();
     const userData = this.state.newUser;
-    // const proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-     let url = 'http://localhost:8080/api/customer';
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/',
+      url = 'https://localhost:8080/api/customer';
     console.log('userData>>>', userData)
 
     fetch( url, {
