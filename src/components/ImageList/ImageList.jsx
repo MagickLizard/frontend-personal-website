@@ -9,31 +9,30 @@ class ImageList extends React.Component {
         </div>
         <div className="container columns">
           <div className="column is-5">
-            <div className="column is-8">
+            <a className="column is-8">
               <img
                 className="image"
                 src="node.png"
                 alt="node.js logo"
                 width="70px"
               />
-              <br />
+              <br/>
               <progress className="progress is-small" value="80" max="100">
                 45%
               </progress>
-            </div>
-            <div className="column is-8">
+            </a>
+            <a className="column is-8">
               <img
                 className="image"
                 src="es6.svg"
                 alt="es6 logo"
                 width="65px"
               />
-              <br />
               <progress className="progress is-small" value="80" max="100">
                 45%
               </progress>
-            </div>
-            <div className="column is-8">
+            </a>
+            <a className="column is-8">
               <img
                 className="image"
                 src="html.png"
@@ -44,8 +43,8 @@ class ImageList extends React.Component {
               <progress className="progress is-small" value="80" max="100">
                 45%
               </progress>
-            </div>
-            <div className="column is-8">
+            </a>
+            <a className="column is-8">
               <img
                 className="image"
                 src="angular.svg"
@@ -56,10 +55,10 @@ class ImageList extends React.Component {
               <progress className="progress is-small" value="80" max="100">
                 45%
               </progress>
-            </div>
+            </a>
           </div>
           <div className="column is-5">
-            <div className="column is-8">
+            <a className="column is-8">
               <img
                 className="img-logo"
                 src="java.png"
@@ -70,8 +69,8 @@ class ImageList extends React.Component {
               <progress className="progress is-small" value="80" max="100">
                 45%
               </progress>
-            </div>
-            <div className="column is-8">
+            </a>
+            <a className="column is-8">
               <img
                 className="img-logo"
                 src="react.png"
@@ -82,8 +81,8 @@ class ImageList extends React.Component {
               <progress className="progress is-small" value="80" max="100">
                 45%
               </progress>
-            </div>
-            <div className="column is-8">
+            </a>
+            <a className="column is-8">
               <img
                 className="img-logo"
                 src="cplusplus.png"
@@ -94,8 +93,8 @@ class ImageList extends React.Component {
               <progress className="progress is-small" value="80" max="100">
                 45%
               </progress>
-            </div>
-            <div className="column is-8">
+            </a>
+            <a className="column is-8">
               <img
                 className="img-logo"
                 src="js.png"
@@ -106,7 +105,7 @@ class ImageList extends React.Component {
               <progress className="progress is-small" value="80" max="100">
                 45%
               </progress>
-            </div>
+            </a>
           </div>
         </div>
       </section>
