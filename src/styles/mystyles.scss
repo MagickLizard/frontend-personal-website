@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-$brown: #333331;
-$beige-light: #D0D1CD;
+$brown: #faf4e7;
+$beige-light: rgb(233, 232, 227);
 // $family-sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
 // Primary colours
 $ca-palette-paper: #f2edde;
@@ -9,24 +9,50 @@ $ca-palette-paper: #f2edde;
 // Text colours
 $text-color:#3e4543;
 // Progress bar
-$progress-value-background-color:#f3786d;
-$progress-bar-background-color: #dd621b;
+$progress-value-background-color:#e05346;
+$progress-bar-background-color: #f1bd12;
 
 //tile
 $notification-background-color:#f3786d;
 
 //titles
 $card-color: $ca-palette-paper;
-$title-color: #e9ecdd;
-$subtitle-color: #bba111;
-$navbar-background-color: #eed54b;
+$title-color: #fbfcfa;
+$subtitle-color: #fffdf5;
+$navbar-background-color: #eead4b;
 //other
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $link: #1b7688;
 $title-weight: 550;
-$body-background-color: #f7ca4e;
+$body-background-color: #f7a03e;
 $background: #f2edde;
+$primary: #f7ad8a;
 
+.img-responsive {
+  display: block; 
+  max-width: 100%;
+  height: auto;
+  opacity: 0.3;
+  z-index:-1;
+
+} 
+
+.hero {
+  &.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+  &-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    &.is-transparent {
+      opacity: 0.3;
+    }
+  }
+}
 
 @import "../../node_modules/bulma/bulma.sass";
