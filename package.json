@@ -7,10 +7,8 @@
     "react": "^16.8.4",
     "react-accessible-accordion": "^2.4.5",
     "react-dom": "^16.8.4",
-    "react-router-dom": "^4.4.0",
-    "react-scripts": "2.1.8",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.16.0"
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "2.1.8"
   },
   "repository": {
     "type": "git",
@@ -32,6 +30,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.12.0"
   }
 }

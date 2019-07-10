@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+$brown: #333331;
+$beige-light: #D0D1CD;
+// $family-sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
+// Primary colours
+$ca-palette-paper: #f2edde;
+
+// Text colours
+$text-color:#3e4543;
+// Progress bar
+$progress-value-background-color:#f3786d;
+$progress-bar-background-color: #dd621b;
+
+//tile
+$notification-background-color:#f3786d;
+
+//titles
+$card-color: $ca-palette-paper;
+$title-color: #e9ecdd;
+$subtitle-color: #bba111;
+$navbar-background-color: #eed54b;
+//other
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$link: #1b7688;
+$title-weight: 550;
+$body-background-color: #f7ca4e;
+$background: #f2edde;
+
+
+@import "../../node_modules/bulma/bulma.sass";
