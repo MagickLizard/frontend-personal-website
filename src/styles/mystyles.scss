@@ -23,14 +23,26 @@ $navbar-background-color: #eead4b;
 //other
 $grey-dark: $brown;
 $grey-light: $beige-light;
-$link: #41372f;
 $title-weight: 550;
 $body-background-color: #f7a03e;
 $background: #f2edde;
 $primary: #f7ad8a;
+
+// icons for frameworks
 $icon-dimensions-large: 5rem;
+
+// navbar
 $link-hover-background: rgb(238, 133, 63);
-$link-hover: rgb(17, 15, 15);
+$navbar-dropdown-arrow: $background;
+$navbar-dropdown-arrow-hover-color: $background;
+$navbar-item-color: $background;
+$navbar-dropdown-background-color: rgb(218, 97, 27);
+$navbar-dropdown-item-active-color: rgb(41, 40, 40);
+$navbar-dropdown-item-hover-background-color: #d85215;
+$navbar-dropdown-item-hover-color: rgb(41, 40, 40);
+$navbar-dropdown-item-hover-background-color: #f5b79b;
+$navbar-item-hover-background-color: rgba(252, 123, 36, 0.911);
+$link: $background; //ALL Links
 a:hover {
   background-color: $link-hover-background; //TO FIX
   opacity: 0.9;
