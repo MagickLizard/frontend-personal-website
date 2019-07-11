@@ -1,5 +1,5 @@
 import React from 'react';
-import './Employers.scss';
+import './employers.scss';
 
 class Employers extends React.Component {
   render() {

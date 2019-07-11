@@ -23,17 +23,18 @@ $navbar-background-color: #eead4b;
 //other
 $grey-dark: $brown;
 $grey-light: $beige-light;
-$link: #1b7688;
+$link: #41372f;
 $title-weight: 550;
 $body-background-color: #f7a03e;
 $background: #f2edde;
 $primary: #f7ad8a;
-
+$icon-dimensions-large: 5rem;
 $link-hover-background: rgb(238, 133, 63);
 a:hover {
   background-color: $link-hover-background;
   opacity: 0.8;
   transition: 0.6s;
 }
+
 
 @import "../../node_modules/bulma/bulma.sass";
