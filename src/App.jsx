@@ -17,7 +17,12 @@ class App extends Component {
             alt="background of lava"
           />
           <Message> </Message>
-          <Employers></Employers>
+          <div className="section">
+            <div className="container">
+              <h1 className="title"> Experience </h1>
+            </div>
+          </div>
+          <Employers />
         </section>
         <ImageList />
       </div>

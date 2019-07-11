@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-$brown: #faf4e7;
+$brown: #faf4e7; // text color
 $beige-light: rgb(233, 232, 227);
 // $family-sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
 // Primary colours
@@ -30,10 +30,11 @@ $background: #f2edde;
 $primary: #f7ad8a;
 $icon-dimensions-large: 5rem;
 $link-hover-background: rgb(238, 133, 63);
+$link-hover: rgb(17, 15, 15);
 a:hover {
-  background-color: $link-hover-background;
-  opacity: 0.8;
-  transition: 0.6s;
+  background-color: $link-hover-background; //TO FIX
+  opacity: 0.9;
+  transition: 0.5s;
 }
 
 

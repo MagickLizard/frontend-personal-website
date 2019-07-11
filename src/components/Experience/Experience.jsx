@@ -1,33 +1,18 @@
 import React from 'react';
 import './experience.scss';
+import ExperienceImage from './ExperienceImage/ExperienceImage';
 
 class Experience extends React.Component {
   render() {
     return (
-      <section className="section container">
-        <h1 className="title"> Experience </h1>
-        <div className="columns is-vcentered">
-          <a className="column is-3 employers">
-            <div className="image">
-              <img src="venuemob.png" alt="venuemob logo" width="50px"/>
-            </div>
-          </a>
-          <a className="column is-3 employers">
-            <div className="image">
-              <img src="myob.png" alt="myob logo" width="50px"/>
-            </div>
-          </a>
-          <a className="column is-3 employers">
-            <div className="image">
-              <img src="deloitte.png" alt="Deloitte logo" width="50px"/>
-            </div>
-          </a>
-          <a className="column is-3 employers">
-            <div className="image">
-              <img src="gcomm.webp" alt="GCOMM logo" width="50px"/>
-            </div>
-          </a>
+      <section className="container">
+        <div className="columns is-vcentered is-10">
+          <ExperienceImage imageName="venuemob" imageRef="venuemob.png" />
+          <ExperienceImage imageName="myob" imageRef="myob.png" />
+          <ExperienceImage imageName="deloitte" imageRef="deloitte.png" />
+          <ExperienceImage imageName="gcomm" imageRef="gcomm.webp" />
         </div>
+        <br/>
       </section>
     );
   }

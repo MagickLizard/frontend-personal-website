@@ -9,7 +9,7 @@ class Message extends React.Component {
             <div className="columns">
               <div className="column is-2">
                 <figure className="image is-128x128">
-                  <img className="is-rounded" src="me.jpg" />
+                  <img className="is-rounded" src="me.jpg" alt="me"/>
                 </figure>
               </div>
               <div className="column">
