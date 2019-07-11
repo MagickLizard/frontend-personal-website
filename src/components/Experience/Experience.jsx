@@ -1,7 +1,7 @@
 import React from 'react';
-import './employers.scss';
+import './experience.scss';
 
-class Employers extends React.Component {
+class Experience extends React.Component {
   render() {
     return (
       <section className="section container">
@@ -32,4 +32,4 @@ class Employers extends React.Component {
     );
   }
 }
-export default Employers;
+export default Experience;

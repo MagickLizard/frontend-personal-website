@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Message from './components/Message/Message';
-import ImageList from './components/ImageList/ImageList';
-import Employers from './components/Employers/Employers';
+import ImageList from './components/IconList/iconList';
+import Employers from './components/Experience/Experience';
 import './App.scss';
 
 class App extends Component {
