@@ -1,6 +1,6 @@
 import React from 'react';
 import './iconList.scss';
-import Icon from './Image/Icon';
+import Icon from './Icon/Icon';
 class IconList extends React.Component {
   render() {
     return (
@@ -10,12 +10,13 @@ class IconList extends React.Component {
         </div>
         <section className="section">
           <div className="container">
-            <div className="columns">
+            <div className="columns is-two-fifths">
+
               <Icon name="fa-node"> </Icon>
               <Icon name="fa-node-js"> </Icon>
               <Icon name="fa-react"> </Icon>
               <Icon name="fa-angular"> </Icon>
-            </div>
+              </div>
           </div>
           <br />
           <div className="container">
