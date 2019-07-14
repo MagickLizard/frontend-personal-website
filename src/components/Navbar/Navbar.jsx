@@ -8,7 +8,6 @@ class NavBar extends React.Component {
           <a className="navbar-item" href="/">
             <img src="dragon.png" width="50" height="28" alt="home page" />
           </a>
-
           <a
             role="button"
             className="navbar-burger burger"
@@ -30,7 +29,6 @@ class NavBar extends React.Component {
                 <i className="fas fa-home" />
               </span>
             </a>
-
             <a
               className="navbar-item"
               href="https://www.linkedin.com/in/elizabeth-king-11a978a2"
@@ -39,22 +37,20 @@ class NavBar extends React.Component {
                 <i className="fas fa-paper-plane" />
               </span>
             </a>
-
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link" href="/">
+              <a className="navbar-link" href="/projects">
                 <span className="icon">
                   <i className="fas fa-fire" alt="Portfolio" />
                 </span>
               </a>
-
               <div className="navbar-dropdown is-dark">
-                <a className="navbar-item" href="/">
+                <a className="navbar-item" href="/projects">
                   iternary builder project
                 </a>
-                <a className="navbar-item" href="/">
+                <a className="navbar-item" href="/projects">
                   Youtube api project
                 </a>
-                <a className="navbar-item" href="/">
+                <a className="navbar-item" href="/projects">
                   Image display project
                 </a>
               </div>
