@@ -4,6 +4,7 @@ import Message from './components/Message/Message';
 import ImageList from './components/IconList/iconList';
 import Employers from './components/Experience/Experience';
 import SearchBar from './components/Youtube/SearchBar/SearchBar';
+import ExperienceInfo from './components/Experience/ExperienceInfo/ExperienceInfo'
 import ApiYoutube from './api/apiYoutube';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
@@ -22,7 +23,7 @@ class App extends Component {
     });
   };
   homePage = () => {
-   return( <div className="">
+   return( <div>
       <section className="hero has-background">
         <img
           className="img hero-background is-transparent"
@@ -40,6 +41,13 @@ class App extends Component {
       <ImageList />
     </div>)
   };
+  experiencePage = () => {
+    return(
+    <div>
+    <ExperienceInfo />
+     </div>
+     )
+   };
   projectPage = () => {
     return(
     <div>
@@ -60,6 +68,11 @@ class App extends Component {
               path="/projects"
               exact
               component={this.projectPage}
+            />
+            <Route
+              path="/experience"
+              exact
+              component={this.experiencePage}
             />
           </div>
         </Router>

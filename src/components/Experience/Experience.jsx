@@ -4,7 +4,7 @@ import ExperienceImage from './ExperienceImage/ExperienceImage';
 import Venuemob from '../../img/venuemob.png';
 import Myob from '../../img/myob.png';
 import Deloitte from '../../img/deloitte.png';
-import Gcomm from '../../img/gcomm.webp';
+import Gcomm from '../../img/gcomm.png';
 
 class Experience extends React.Component {
   render() {
