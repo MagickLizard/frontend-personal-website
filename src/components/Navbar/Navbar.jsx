@@ -1,12 +1,13 @@
 import React from 'react';
 import './navbar.scss';
+import LizardLogo from '../../img/dragon.png';
 class NavBar extends React.Component {
   render() {
     return (
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
-            <img src="dragon.png" width="50" height="28" alt="home page" />
+            <img src={LizardLogo} width="50" height="28" alt="home page" />
           </a>
           <a
             role="button"
@@ -40,19 +41,19 @@ class NavBar extends React.Component {
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link" href="/projects">
                 <span className="icon">
-                  <i className="fas fa-fire" alt="Portfolio" />
+                  <i className="fas fa-bezier-curve" alt="Portfolio" />
                 </span>
               </a>
               <div className="navbar-dropdown is-dark">
-                <a className="navbar-item" href="/projects">
-                  iternary builder project
-                </a>
+                {/* <a className="navbar-item" href="/projects">
+                  Iternary builder project
+                </a> */}
                 <a className="navbar-item" href="/projects">
                   Youtube api project
                 </a>
-                <a className="navbar-item" href="/projects">
+                {/* <a className="navbar-item" href="/projects">
                   Image display project
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

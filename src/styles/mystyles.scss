@@ -36,13 +36,14 @@ $link-hover-background: rgb(238, 133, 63);
 $navbar-dropdown-arrow: $background;
 $navbar-dropdown-arrow-hover-color: $background;
 $navbar-item-color: $background;
-$navbar-dropdown-background-color: rgb(218, 97, 27);
+$navbar-dropdown-background-color: rgb(253, 118, 94);
 $navbar-dropdown-item-active-color: rgb(41, 40, 40);
 $navbar-dropdown-item-hover-background-color: #d85215;
-$navbar-dropdown-item-hover-color: rgb(41, 40, 40);
-$navbar-dropdown-item-hover-background-color: #f5b79b;
+$navbar-dropdown-item-hover-color: rgb(248, 217, 212);
+$navbar-dropdown-item-hover-background-color: #fa835e;
 $navbar-item-hover-background-color: rgba(252, 123, 36, 0.911);
 $link: $background; //ALL Links
+
 a:hover {
   background-color: $link-hover-background; //TO FIX
   opacity: 0.9;

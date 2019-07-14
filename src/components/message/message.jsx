@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageOfMe from '../../img/me.jpg';
 
 class Message extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class Message extends React.Component {
             <div className="columns">
               <div className="column is-2">
                 <figure className="image is-128x128">
-                  <img className="is-rounded" src="me.jpg" alt="me"/>
+                  <img className="is-rounded" src={ImageOfMe} alt="me"/>
                 </figure>
               </div>
               <div className="column">

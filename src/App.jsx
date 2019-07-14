@@ -7,11 +7,11 @@ import SearchBar from './components/Youtube/SearchBar/SearchBar';
 import ApiYoutube from './api/apiYoutube';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
+import background from './img/background1.jpg';
 
 class App extends Component {
   state = { videos: [] };
   onSearchTermSubmit = async (term) => {
-    //---async process
     const response = await ApiYoutube.get('/search', {
       params: {
         q: term
@@ -26,7 +26,7 @@ class App extends Component {
       <section className="hero has-background">
         <img
           className="img hero-background is-transparent"
-          src="background1.jpg"
+          src={background}
           alt="background of lava"
         />
         <Message> </Message>

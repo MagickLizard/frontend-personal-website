@@ -12,14 +12,10 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="section">
-        Youtube Search
-        <form onSubmit={this.onFormSubmit}>
-        <input
-        className="input is-medium" 
-        type="text" 
-        value={this.state.term}
-        onChange={this.onInputChange}></input>
-        </form>
+        <div className="container">
+          <h1 className="title"> Work in progress.. </h1>
+          <h2 className="subtitle"> Come back soon.. </h2>
+        </div>
       </div>
     )
   }
