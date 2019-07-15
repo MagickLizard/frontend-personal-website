@@ -8,7 +8,7 @@ import ExperienceInfo from './components/Experience/ExperienceInfo/ExperienceInf
 import ApiYoutube from './api/apiYoutube';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
-import background from './img/background1.jpg';
+import background from './img/background4.jpg';
 
 class App extends Component {
   state = { videos: [] };
@@ -24,26 +24,29 @@ class App extends Component {
   };
   homePage = () => {
    return( <div>
-      <section className="hero has-background">
+      <section className="hero has-background is-bold" >
         <img
           className="img hero-background is-transparent"
           src={background}
           alt="background of lava"
         />
         <Message> </Message>
-        <div className="section">
-          <div className="container">
+  
+      </section>
+      {/* <section className="hero is-light">
+      <div className="section">
+      <div className="container">
             <h1 className="title"> Experience </h1>
+          <Employers />
           </div>
         </div>
-        <Employers />
-      </section>
+        </section> */}
       <ImageList />
     </div>)
   };
   experiencePage = () => {
     return(
-    <div>
+    <div className="container">
     <ExperienceInfo />
      </div>
      )
@@ -61,8 +64,8 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
+        <Navbar />
           <div className="hero has-background">
-          <Navbar />
             <Route path="/" exact component={this.homePage} />
             <Route
               path="/projects"

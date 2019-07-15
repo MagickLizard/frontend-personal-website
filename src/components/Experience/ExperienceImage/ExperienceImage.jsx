@@ -9,7 +9,6 @@ class ExperienceImage extends React.Component {
   };
   render() {
     return (
-        <a className="column is-3 employers" href="/experience">
           <div className="image">
             <img
               src={this.props.imageRef}
@@ -17,7 +16,6 @@ class ExperienceImage extends React.Component {
               width="50px"
             />
           </div>
-        </a>
     );
   }
 }

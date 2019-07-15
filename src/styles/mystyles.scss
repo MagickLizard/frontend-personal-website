@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-$brown: #faf4e7; // text color
+$brown: #FFF6FF; // text color
 $beige-light: rgb(233, 232, 227);
 // $family-sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
 // Primary colours
@@ -17,32 +17,36 @@ $notification-background-color:#f3786d;
 
 //titles
 $card-color: $ca-palette-paper;
-$title-color: #fbfcfa;
+$title-color: #9672C6;
 $subtitle-color: #fffdf5;
-$navbar-background-color: #eead4b;
+
 //other
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $title-weight: 550;
-$body-background-color: #f7a03e;
-$background: #f2edde;
-$primary: #f7ad8a;
+$body-background-color: #fde2f6;
+$background: #FCEAFF;
+$primary: #B97AEC;
+$light: #FFF6FF;
 
+//links
+$link-hover-background: #FFA2BC;
+$link: $background; //ALL Links
 // icons for frameworks
 $icon-dimensions-large: 5rem;
 
 // navbar
-$link-hover-background: rgb(238, 133, 63);
+$navbar-background-color:#CEA6FF;
+
 $navbar-dropdown-arrow: $background;
 $navbar-dropdown-arrow-hover-color: $background;
 $navbar-item-color: $background;
-$navbar-dropdown-background-color: rgb(253, 118, 94);
+$navbar-dropdown-background-color:#CEA6FF;
 $navbar-dropdown-item-active-color: rgb(41, 40, 40);
-$navbar-dropdown-item-hover-background-color: #d85215;
-$navbar-dropdown-item-hover-color: rgb(248, 217, 212);
-$navbar-dropdown-item-hover-background-color: #fa835e;
-$navbar-item-hover-background-color: rgba(252, 123, 36, 0.911);
-$link: $background; //ALL Links
+$navbar-dropdown-item-hover-background-color: transparent;
+$navbar-dropdown-item-hover-color: #9672C6;
+$navbar-item-hover-background-color: rgba(202, 152, 243, 0.911);
+
 
 a:hover {
   background-color: $link-hover-background; //TO FIX

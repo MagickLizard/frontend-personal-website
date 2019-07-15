@@ -1,22 +1,61 @@
 import React from 'react';
 import './experience.scss';
 import ExperienceImage from './ExperienceImage/ExperienceImage';
+import ExperienceInfo from './ExperienceInfo/ExperienceInfo';
 import Venuemob from '../../img/venuemob.png';
 import Myob from '../../img/myob.png';
 import Deloitte from '../../img/deloitte.png';
 import Gcomm from '../../img/gcomm.png';
 
 class Experience extends React.Component {
+  state = { company: '', title: '' };
+  onClickFunc = (event, name, title) => {
+    event.preventDefault();
+    this.setState({ company: name, title: title });
+  };
   render() {
     return (
       <section className="container">
         <div className="columns is-vcentered is-10">
-          <ExperienceImage imageName="venuemob" imageRef={Venuemob} />
-          <ExperienceImage imageName="myob" imageRef={Myob} />
-          <ExperienceImage imageName="deloitte" imageRef={Deloitte} />
-          <ExperienceImage imageName="gcomm" imageRef={Gcomm} />
+          <a
+            className="image column is-3 employers"
+            onClick={(event) =>
+              this.onClickFunc(event, 'Venuemob', 'Full Stack Developer')
+            }
+          >
+            <ExperienceImage imageRef={Venuemob} imageName={Venuemob} />
+          </a>
+          <a
+            className="image column is-3 employers"
+            onClick={(event) =>
+              this.onClickFunc(event, 'Myob', 'Full Stack Developer')
+            }
+          >
+            <ExperienceImage imageRef={Myob} imageName={Myob} />
+          </a>
+          <a
+            className="image column is-3 employers"
+            onClick={(event) =>
+              this.onClickFunc(event, 'Deloitte', 'Salesforce Consultant')
+            }
+          >
+            <ExperienceImage imageRef={Deloitte} imageName={Deloitte} />
+          </a>
+          <a
+            className="image column is-3 employers"
+            onClick={(event) =>
+              this.onClickFunc(event, 'GCOMM', 'Salesforce Developer')
+            }
+          >
+            <ExperienceImage imageRef={Gcomm} imageName={Gcomm} />
+          </a>
         </div>
-        <br/>
+        <ExperienceInfo
+          experienceName={this.state.company}
+          title={this.state.title}
+        />
+
+        <br />
       </section>
     );
   }
