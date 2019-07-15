@@ -16,8 +16,8 @@ class Experience extends React.Component {
   render() {
     return (
       <section className="container">
-          <h1 className="title">Previous Experience</h1>
-        <div className="columns is-vcentered is-10">
+          <h1 className="title heroTitle">Previous Experience</h1>
+        <div className="section columns is-10">
           <a
             className="image column is-3 employers"
             onClick={(event) =>

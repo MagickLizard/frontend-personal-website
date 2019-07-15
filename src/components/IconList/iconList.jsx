@@ -1,54 +1,30 @@
 import React from 'react';
 import './iconList.scss';
 import Icon from './Icon/Icon';
+
 class IconList extends React.Component {
   render() {
     return (
-      <section className="container">
-        <div className="">
-          <h2 className="title">Frameworks and Languages</h2>
+      <section className="section">
+        <div className="container">
+          <h2 className="title heroTitle">Tech stack</h2>
         </div>
-        <section className="container">
-          <div className="columns is-12">
-            <div className="column is-2">
+        <section className="section">
+          <div className="container">
+            <div className="columns">
               <Icon name="fa-node"> </Icon>
-            </div>
-            <div className="column is-2">
               <Icon name="fa-node-js"> </Icon>
-            </div>
-            <div className="column is-2">
               <Icon name="fa-react"> </Icon>
-            </div>
-            <div className="column is-2">
               <Icon name="fa-angular"> </Icon>
             </div>
-            <div className="column is-2">
-              <Icon name="fa-git"> </Icon>
-            </div>
-            <div className="column is-2">
-              <Icon name="fa-gitlab"> </Icon>
-            </div>
           </div>
-        </section>
-        <section className="container">
-          <div className="columns is-12">
-            <div className="column is-2">
-              <Icon name="fa-html5"> </Icon>
-            </div>
-            <div className="column is-2">
+          <br />
+          <div className="container">
+            <div className="columns">
+            <Icon name="fa-html5"> </Icon>
               <Icon name="fa-java"> </Icon>
-            </div>
-            <div className="column is-2">
               <Icon name="fa-css3-alt"> </Icon>
-            </div>
-            <div className="column is-2">
               <Icon name="fa-aws"> </Icon>
-            </div>
-            <div className="column is-2">
-              <Icon name="fas fa-database"> </Icon>
-            </div>
-            <div className="column is-2">
-              <Icon name="fa-sass"> </Icon>
             </div>
           </div>
         </section>

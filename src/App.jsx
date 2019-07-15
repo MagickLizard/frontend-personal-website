@@ -46,7 +46,7 @@ class App extends Component {
                         <ImageList />
                       </div>
                     </section>
-                    <section className="sectionScroll hero is-primary">
+                    <section className="sectionScroll hero is-info">
                       <div className="section">
                         <Employers />
                       </div>

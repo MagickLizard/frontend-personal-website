@@ -26,6 +26,7 @@ $primary: #B97AEC;
 $primary-hero: #B97AEC;
 $secondColour: #CEA6FF;
 $light: #FFF6FF;
+$info: #FCEAFF;
 //links
 $link-hover-background: #FFA2BC;
 $link: $background; //ALL Links
@@ -56,6 +57,9 @@ $tabs-link-hover-color: #4B4453 !important;
 // }
 $tabs-boxed-link-radius: 20px;
 $tabs-toggle-link-radius: 20px;
+.heroTitle {
+  color: #9672C6 !important;
+}
 
 
 @import "../../node_modules/bulma/bulma.sass";
