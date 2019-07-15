@@ -43,13 +43,13 @@ class App extends Component {
                   <section className="sectionScroll parallax">
                     <Message> </Message>
                   </section>
-                  <section className="sectionScroll hero is-light">
-                      <div className="section">
+                  <section className="sectionScrollsmall hero is-light">
+                      <div className="">
                         <ImageList />
                       </div>
                     </section>
-                    <section className="sectionScroll hero is-primary">
-                      <div className="section">
+                    <section className="sectionScrollsmall hero is-primary is-bold">
+                      <div className="container">
                         <Employers />
                       </div>
                     </section>
