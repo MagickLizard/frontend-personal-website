@@ -3,6 +3,8 @@ import Navbar from './components/Navbar/Navbar';
 import Message from './components/Message/Message';
 import ImageList from './components/IconList/iconList';
 import Employers from './components/Experience/Experience';
+
+import Venuemob from './components/Experience/Venuemob/Venuemob';
 import SearchBar from './components/Youtube/SearchBar/SearchBar';
 import ExperienceInfo from './components/Experience/ExperienceInfo/ExperienceInfo';
 import ApiYoutube from './api/apiYoutube';
@@ -46,9 +48,14 @@ class App extends Component {
                         <ImageList />
                       </div>
                     </section>
-                    <section className="sectionScroll hero is-info">
+                    <section className="sectionScroll hero is-primary">
                       <div className="section">
                         <Employers />
+                      </div>
+                    </section>
+                    <section className="sectionScroll hero is-info">
+                      <div className="container">
+                        <Venuemob />
                       </div>
                     </section>
                 </main>
@@ -66,7 +73,7 @@ class App extends Component {
                     <a href="/projects"> Side projects</a>
                   </li>
                   <li>
-                    <a href="/projects"> Tech stack</a>
+                    <a href="/experience"> Tech stack</a>
                   </li>
                 </ul>
               </div>
