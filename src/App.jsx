@@ -4,11 +4,11 @@ import Message from './components/Message/Message';
 import ImageList from './components/IconList/iconList';
 import Employers from './components/Experience/Experience';
 import SearchBar from './components/Youtube/SearchBar/SearchBar';
-import ExperienceInfo from './components/Experience/ExperienceInfo/ExperienceInfo'
+import ExperienceInfo from './components/Experience/ExperienceInfo/ExperienceInfo';
 import ApiYoutube from './api/apiYoutube';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
-import background from './img/background4.jpg';
+import background from './img/background3.jpg';
 
 class App extends Component {
   state = { videos: [] };
@@ -23,62 +23,82 @@ class App extends Component {
     });
   };
   homePage = () => {
-   return( <div>
-      <section className="hero has-background is-bold" >
-        <img
-          className="img hero-background is-transparent"
-          src={background}
-          alt="background of lava"
-        />
-        <Message> </Message>
-  
-      </section>
-      {/* <section className="hero is-light">
-      <div className="section">
-      <div className="container">
-            <h1 className="title"> Experience </h1>
-          <Employers />
+    return (
+        <section className="hero is-primary is-fullheight has-background is-bold">
+          <img
+            className="img hero-background is-transparent"
+            src={background}
+            alt="background of lava"
+          />
+
+          <div className="hero-head">
+            <Navbar />
           </div>
-        </div>
-        </section> */}
-      <ImageList />
-    </div>)
+
+          {/* <!-- Hero content: will be in the middle --> */}
+              <div className="MainContainer">
+                <main className="wrapper">
+                  <section className="sectionScroll parallax">
+                    <Message> </Message>
+                  </section>
+                  <section className="sectionScroll hero is-light">
+                      <div className="section">
+                        <ImageList />
+                      </div>
+                    </section>
+                    <section className="sectionScroll hero is-primary">
+                      <div className="section">
+                        <Employers />
+                      </div>
+                    </section>
+                </main>
+              </div>
+
+          {/* <!-- Hero footer: will stick at the bottom --> */}
+          <div className="hero-foot">
+            <nav className="tabs">
+              <div className="container">
+                <ul>
+                  <li className="is-active">
+                    <a href="/experience">Overview</a>
+                  </li>
+                  <li>
+                    <a href="/projects"> Side projects</a>
+                  </li>
+                  <li>
+                    <a href="/projects"> Tech stack</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </section>
+    );
   };
   experiencePage = () => {
-    return(
-    <div className="container">
-    <ExperienceInfo />
-     </div>
-     )
-   };
+    return (
+      <div className="container">
+        <ExperienceInfo />
+      </div>
+    );
+  };
   projectPage = () => {
-    return(
-    <div>
-       <section className="hero has-background">
-         <SearchBar searchTerm={this.onSearchTermSubmit}></SearchBar>
-       </section>
-     </div>
-     )
-   };
+    return (
+      <div>
+        <section className="hero has-background">
+          <SearchBar searchTerm={this.onSearchTermSubmit} />
+        </section>
+      </div>
+    );
+  };
   render() {
     return (
       <div className="App">
-        <Router>
-        <Navbar />
-          <div className="hero has-background">
-            <Route path="/" exact component={this.homePage} />
-            <Route
-              path="/projects"
-              exact
-              component={this.projectPage}
-            />
-            <Route
-              path="/experience"
-              exact
-              component={this.experiencePage}
-            />
-          </div>
-        </Router>
+          <Router>
+              <Route path="/" exact component={this.homePage} />
+              <Route path="/projects" exact component={this.projectPage} />
+              <Route path="/experience" exact component={this.experiencePage} />
+          </Router>
       </div>
     );
   }

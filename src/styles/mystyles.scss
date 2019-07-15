@@ -8,9 +8,6 @@ $ca-palette-paper: #f2edde;
 
 // Text colours
 $text-color:#3e4543;
-// Progress bar
-$progress-value-background-color:#e05346;
-$progress-bar-background-color: #f1bd12;
 
 //tile
 $notification-background-color:#f3786d;
@@ -19,7 +16,6 @@ $notification-background-color:#f3786d;
 $card-color: $ca-palette-paper;
 $title-color: #9672C6;
 $subtitle-color: #fffdf5;
-
 //other
 $grey-dark: $brown;
 $grey-light: $beige-light;
@@ -27,8 +23,9 @@ $title-weight: 550;
 $body-background-color: #fde2f6;
 $background: #FCEAFF;
 $primary: #B97AEC;
+$primary-hero: #B97AEC;
+$secondColour: #CEA6FF;
 $light: #FFF6FF;
-
 //links
 $link-hover-background: #FFA2BC;
 $link: $background; //ALL Links
@@ -36,23 +33,29 @@ $link: $background; //ALL Links
 $icon-dimensions-large: 5rem;
 
 // navbar
-$navbar-background-color:#CEA6FF;
+$navbar-background-color:$secondColour;
 
 $navbar-dropdown-arrow: $background;
 $navbar-dropdown-arrow-hover-color: $background;
 $navbar-item-color: $background;
-$navbar-dropdown-background-color:#CEA6FF;
+$navbar-dropdown-background-color: $secondColour;
 $navbar-dropdown-item-active-color: rgb(41, 40, 40);
 $navbar-dropdown-item-hover-background-color: transparent;
 $navbar-dropdown-item-hover-color: #9672C6;
 $navbar-item-hover-background-color: rgba(202, 152, 243, 0.911);
 
 
-a:hover {
-  background-color: $link-hover-background; //TO FIX
-  opacity: 0.9;
-  transition: 0.5s;
-}
+$radius: 0px;
+// $radius-small: 10px;
+$easing: ease-in;
+$tabs-link-hover-color: #4B4453 !important;
+// a:hover {
+//   background-color: $link-hover-background; //TO FIX
+//   opacity: 0.9;
+//   transition: 0.5s;
+// }
+$tabs-boxed-link-radius: 20px;
+$tabs-toggle-link-radius: 20px;
 
 
 @import "../../node_modules/bulma/bulma.sass";
