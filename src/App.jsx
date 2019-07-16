@@ -40,10 +40,10 @@ class App extends Component {
             </div>
           </section>
           <section className="hero is-light">
-            <div className="">
-              <ImageList />
-            </div>
-          </section>
+        <div>
+          <ImageList />
+        </div>
+      </section>
           <section className="hero is-primary is-bold is-medium">
             <div className="container">
               <Employers />
@@ -88,6 +88,15 @@ class App extends Component {
       </div>
     );
   };
+  iconComponent = () => {
+    return (
+      <section className="hero is-light">
+        <div>
+          <ImageList />
+        </div>
+      </section>
+    );
+  };
   render() {
     return (
       <div className="App">
@@ -102,6 +111,7 @@ class App extends Component {
           </div>
           <Router>
             <Route path="/" exact component={this.homePage} />
+            <Route path="/images" exact component={this.iconComponent} />
             <Route path="/projects" exact component={this.projectPage} />
           </Router>
         </section>
