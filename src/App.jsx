@@ -27,8 +27,17 @@ class App extends Component {
     return (
       <div className="MainContainer">
         <main className="wrapper">
-          <section className="parallax hero is-fullheight is-bold">
+          <section className="parallax hero is-fullheight is-bold has-text-centered">
             <Message> </Message>
+            <div className="has-text-centered">
+              <a href="/">
+                <span className="icon is-large">
+                  <span className="fa-stack fa-lg">
+                    <i className="fas fa-angle-down" />
+                  </span>
+                </span>
+              </a>
+            </div>
           </section>
           <section className="hero is-light">
             <div className="">

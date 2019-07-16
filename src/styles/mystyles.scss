@@ -46,6 +46,10 @@ $navbar-dropdown-item-hover-color: #9672C6;
 $navbar-item-hover-background-color: rgba(202, 152, 243, 0.911);
 
 
+// icon
+$icon-dimensions-large: 5rem;
+$icon-dimensions-medium: 3rem;
+
 $radius: 0px;
 // $radius-small: 10px;
 $easing: ease-in;
@@ -60,6 +64,7 @@ $tabs-toggle-link-radius: 20px;
 .heroTitle {
   color: #9672C6 !important;
 }
+
 
 
 @import "../../node_modules/bulma/bulma.sass";

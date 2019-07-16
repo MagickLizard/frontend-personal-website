@@ -1,12 +1,13 @@
 import React from 'react';
 import ImageOfMe from '../../img/me.jpg';
+import './message.scss'
 
 class Message extends React.Component {
   render() {
     return (
       <div className="section">
       <div className="columns">
-        <div className="column is-2">
+        <div className="column is-2 is-flex is-horizontal-center">
           <figure className="image is-128x128">
             <img className="is-rounded" src={ImageOfMe} alt="me" />
           </figure>
