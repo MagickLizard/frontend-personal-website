@@ -6,7 +6,7 @@ class Message extends React.Component {
     return (
       <div className="section">
       <div className="columns">
-        <div className="column is-4">
+        <div className="column is-2">
           <figure className="image is-128x128">
             <img className="is-rounded" src={ImageOfMe} alt="me" />
           </figure>

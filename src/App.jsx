@@ -6,7 +6,6 @@ import Employers from './components/Experience/Experience';
 
 import Venuemob from './components/Experience/Venuemob/Venuemob';
 import SearchBar from './components/Youtube/SearchBar/SearchBar';
-import ExperienceInfo from './components/Experience/ExperienceInfo/ExperienceInfo';
 import ApiYoutube from './api/apiYoutube';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
@@ -26,66 +25,48 @@ class App extends Component {
   };
   homePage = () => {
     return (
-        <section className="hero is-primary is-fullheight has-background is-bold">
-          <img
-            className="img hero-background is-transparent"
-            src={background}
-            alt="background of lava"
-          />
-
-          <div className="hero-head">
-            <Navbar />
-          </div>
-
-          {/* <!-- Hero content: will be in the middle --> */}
-              <div className="MainContainer">
-                <main className="wrapper">
-                  <section className="sectionScroll parallax">
-                    <Message> </Message>
-                  </section>
-                  <section className="sectionScrollsmall hero is-light">
-                      <div className="">
-                        <ImageList />
-                      </div>
-                    </section>
-                    <section className="sectionScrollsmall hero is-primary is-bold">
-                      <div className="container">
-                        <Employers />
-                      </div>
-                    </section>
-                    <section className="sectionScroll hero is-info">
-                      <div className="container">
-                        <Venuemob />
-                      </div>
-                    </section>
-                </main>
-              </div>
-
-          {/* <!-- Hero footer: will stick at the bottom --> */}
-          <div className="hero-foot">
-            <nav className="tabs">
-              <div className="container">
-                <ul>
-                  <li className="is-active">
-                    <a href="/experience">Overview</a>
-                  </li>
-                  <li>
-                    <a href="/projects"> Side projects</a>
-                  </li>
-                  <li>
-                    <a href="/experience"> Tech stack</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </section>
+      <div className="MainContainer">
+        <main className="wrapper">
+          <section className="parallax hero is-fullheight is-bold">
+            <Message> </Message>
+          </section>
+          <section className="hero is-light">
+            <div className="">
+              <ImageList />
+            </div>
+          </section>
+          <section className="hero is-primary is-bold is-medium">
+            <div className="container">
+              <Employers />
+            </div>
+          </section>
+          <section className="hero is-info">
+            <div className="container">
+              <Venuemob />
+            </div>
+          </section>
+        </main>
+      </div>
     );
   };
-  experiencePage = () => {
+  footer = () => {
     return (
-      <div className="container">
-        <ExperienceInfo />
+      <div className="hero-foot">
+        <nav className="tabs">
+          <div className="container">
+            <ul>
+              <li className="is-active">
+                <a href="/experience">Overview</a>
+              </li>
+              <li>
+                <a href="/projects"> Side projects</a>
+              </li>
+              <li>
+                <a href="/experience"> Tech stack</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     );
   };
@@ -101,11 +82,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <section className="hero is-primary is-fullheight has-background is-bold">
+          <img
+            className="img hero-background is-transparent"
+            src={background}
+            alt="background of lava"
+          />
+          <div className="hero-head">
+            <Navbar />
+          </div>
           <Router>
-              <Route path="/" exact component={this.homePage} />
-              <Route path="/projects" exact component={this.projectPage} />
-              <Route path="/experience" exact component={this.experiencePage} />
+            <Route path="/" exact component={this.homePage} />
+            <Route path="/projects" exact component={this.projectPage} />
           </Router>
+        </section>
       </div>
     );
   }
