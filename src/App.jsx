@@ -11,38 +11,11 @@ import './App.scss';
 import background from './img/background3.jpg';
 
 class App extends Component {
-  homePage = () => {
+
+  messageComponent = () => {
     return (
-      <div className="MainContainer">
-        <main className="wrapper">
-          <section className="parallax hero is-fullheight is-bold has-text-centered">
-            <Message> </Message>
-            <div className="has-text-centered">
-              <a href="/">
-                <span className="icon is-large">
-                  <span className="fa-stack fa-lg">
-                    <i className="fas fa-angle-down" />
-                  </span>
-                </span>
-              </a>
-            </div>
-          </section>
-          <section className="hero is-light">
-        <div>
-          <ImageList />
-        </div>
-      </section>
-          <section className="hero is-primary is-bold is-medium">
-            <div className="container">
-              <Employers />
-            </div>
-          </section>
-          <section className="hero is-info">
-            <div className="container">
-              <Venuemob />
-            </div>
-          </section>
-        </main>
+      <div className="">
+        <Message> </Message>
       </div>
     );
   };
@@ -85,24 +58,38 @@ class App extends Component {
       </section>
     );
   };
+  experienceComponent = () => {
+    return (
+      <div>
+        <section className="hero is-primary is-bold is-large">
+          <div className="">
+            <Employers />
+          </div>
+        </section>
+        <section className="hero is-info">
+          <div className="container">
+            <Venuemob />
+          </div>
+        </section>
+      </div>
+    );
+  };
   render() {
     return (
       <div className="App">
-        <section className="hero is-primary is-fullheight has-background is-bold">
-          <img
-            className="img hero-background is-transparent"
-            src={background}
-            alt="background of lava"
-          />
-          <div className="hero-head">
+        <Router>
+          <section className="hero is-primary is-fullheight has-background is-bold">
+            <img
+              className="img hero-background is-transparent"
+              src={background}
+              alt="background of lava"
+            />
             <Navbar />
-          </div>
-          <Router>
-            <Route path="/" exact component={this.homePage} />
-            <Route path="/images" exact component={this.iconComponent} />
-            <Route path="/projects" exact component={this.projectPage} />
-          </Router>
-        </section>
+            <Route path="/" exact component={this.messageComponent} />
+          </section>
+          <Route path="/" exact component={this.iconComponent} />
+          <Route path="/" exact component={this.experienceComponent} />
+        </Router>
       </div>
     );
   }
