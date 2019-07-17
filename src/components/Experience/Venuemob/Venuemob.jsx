@@ -7,29 +7,45 @@ class Venuemob extends React.Component {
   render() {
     return (
       <section className="section">
-        <a
+        <div className="container columns">
+          <div className="column is-2">
+          </div>
+        <div className="column is-4">
+        <div
           className="image column employers">
           <ExperienceImage imageRef={VenuemobImage} imageName={VenuemobImage} />
-        </a>
-        <h1 className="subtitle experience-info"> Full Stack Developer </h1>
-        <h2 className="subtitle"> </h2>
+        </div>
+        <h1 className="title is-6 experience-info"> Full Stack Developer </h1>
         <p className="content experience-info">
           A member of the development team building on the Venuemob platform.
-          <br />
-          <br />
+
+          </p>
+          <h3 className="title is-6 experience-info">
           I worked on decommissioning two codebases: 
-          <br />
+          </h3>
+
+          <p className="content experience-info">
           A node.js api and a PHP application into new micro-services.
           <br />
           <br />
           This involved moving existing internal and external workflows and
           MySQL logic into different locations.
           <br />
-          The microservices where built using node.js, Javascript and es6. 
+          The microservices where built using node.js, Javascript and ES6. 
           <br />
           <br />
+          </p>
+          </div>
+          <div className="column is-4">
+          <br/>
+          <br />
+          <br/>
+          <br />
+          <h3 className="title is-6 experience-info">
           Some of the micro-services include:
-          <br />
+          </h3>
+          <p className="content experience-info">
+
           Managing internal clients & external client data & their interactions.
           <br />
           <br />
@@ -47,8 +63,9 @@ class Venuemob extends React.Component {
           <br />
           On a day to day basis I did peer programming, mentoring, regular code
           reviews and behaviour driven development.
-        </p>
-
+          </p>
+        </div>
+        </div>
       </section>
     );
   }
