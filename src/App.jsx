@@ -78,6 +78,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
+          
           <section className="hero is-primary is-fullheight has-background is-bold">
             <img
               className="img hero-background is-transparent"
@@ -86,9 +87,12 @@ class App extends Component {
             />
             <Navbar />
             <Route path="/" exact component={this.messageComponent} />
+            <Route path="/projects" exact component={this.projectPage} />
           </section>
           <Route path="/" exact component={this.iconComponent} />
           <Route path="/" exact component={this.experienceComponent} />
+          <Route path="/experience" exact component={this.experienceComponent} />
+  
         </Router>
       </div>
     );

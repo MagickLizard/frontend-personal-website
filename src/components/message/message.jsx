@@ -26,10 +26,10 @@ class Message extends React.Component {
             </div>
             <br />
             <p>
-              I enjoy breaking code bases into micro-services so code is better
+              I enjoy refactoring code bases into micro-services so code is better
               for the next developer.
             </p>
-            <p>I am learning React (this website is using React and Bulma).</p>
+            <p className="content">I am currently learning React (this website is using React and Bulma).</p>
           </div>
         </div>
         <br/>

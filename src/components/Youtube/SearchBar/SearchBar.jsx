@@ -12,7 +12,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="section">
-        <div className="container">
+        <div className="section container">
           <h1 className="title"> Work in progress.. </h1>
           <h2 className="subtitle"> Come back soon.. </h2>
         </div>

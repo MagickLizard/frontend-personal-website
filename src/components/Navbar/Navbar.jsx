@@ -30,14 +30,14 @@ class NavBar extends React.Component {
                 <i className="fas fa-home" />
               </span>
             </a>
-            <a
+            {/* <a
               className="navbar-item"
               href="https://www.linkedin.com/in/elizabeth-king-11a978a2"
             >
               <span className="icon">
                 <i className="fas fa-paper-plane" />
               </span>
-            </a>
+            </a> */}
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link" href="/projects">
                 <span className="icon">
