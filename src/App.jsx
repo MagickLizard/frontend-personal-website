@@ -3,7 +3,6 @@ import Navbar from './components/Navbar/Navbar';
 import Message from './components/Message/Message';
 import ImageList from './components/IconList/iconList';
 import Employers from './components/Experience/Experience';
-
 import Venuemob from './components/Experience/Venuemob/Venuemob';
 import SearchBar from './components/Youtube/SearchBar/SearchBar';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
@@ -11,7 +10,6 @@ import './App.scss';
 import background from './img/background3.jpg';
 
 class App extends Component {
-
   messageComponent = () => {
     return (
       <div className="section">
@@ -78,7 +76,6 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          
           <section className="hero is-primary is-fullheight has-background is-bold">
             <img
               className="img hero-background is-transparent"
@@ -91,8 +88,11 @@ class App extends Component {
           </section>
           <Route path="/" exact component={this.iconComponent} />
           <Route path="/" exact component={this.experienceComponent} />
-          <Route path="/experience" exact component={this.experienceComponent} />
-  
+          <Route
+            path="/experience"
+            exact
+            component={this.experienceComponent}
+          />
         </Router>
       </div>
     );

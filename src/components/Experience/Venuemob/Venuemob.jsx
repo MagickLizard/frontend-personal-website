@@ -5,19 +5,11 @@ import ExperienceInfo from '../ExperienceInfo/ExperienceInfo';
 import VenuemobImage from '../../../img/venuemob.png';
 
 class Venuemob extends React.Component {
-  state = { company: '', title: '' };
-  onClickFunc = (event, name, title) => {
-    event.preventDefault();
-    this.setState({ company: name, title: title });
-  };
   render() {
     return (
       <section className="section">
         <a
           className="image column employers"
-          onClick={(event) =>
-            this.onClickFunc(event, 'Venuemob', 'Full Stack Developer')
-          }
         >
           <ExperienceImage imageRef={VenuemobImage} imageName={VenuemobImage} />
         </a>
