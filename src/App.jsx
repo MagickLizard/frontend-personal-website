@@ -14,7 +14,7 @@ class App extends Component {
 
   messageComponent = () => {
     return (
-      <div className="">
+      <div className="section">
         <Message> </Message>
       </div>
     );
