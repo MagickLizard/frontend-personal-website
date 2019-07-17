@@ -15,24 +15,27 @@ class Message extends React.Component {
             </div>
             <div className="column is-8">
               <div className="card-content message-body">
-                <h2 className="title"> I'm lizzie!</h2>
+              <h2 className="title is-1"> I'm lizzie</h2>
+                <div className="content">
                 <h2 className="subtitle">
                   <a href="https://github.com/MagickLizard">@magicklizard</a>
                 </h2>
-                <div className="content">
+                <p className="content">
                   I have unquestionable desire to make things better than the
-                  day before. <br />
-                  <p>#javascriptislife</p>
-                </div>
-              </div>
-              <br />
-              <p>
+                  day before. 
+                  </p>
+                  <p className="content is-horizontal-center">#javascriptislife</p>
+                  <p>
                 I enjoy refactoring code bases into micro-services so code is
                 better for the next developer.
               </p>
               <p className="content">
                 I am currently learning React and Bulma.
               </p>
+                </div>
+              </div>
+              <br />
+          
             </div>
           </div>
           <br />

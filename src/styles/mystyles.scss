@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+.html {
+  background-color: #B97AEC;
+}
 $brown: #FFF6FF; // text color
 $beige-light: rgb(233, 232, 227);
 // $family-sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -10,7 +12,6 @@ $ca-palette-paper: #f2edde;
 $text-color:#3e4543;
 
 //tile
-$notification-background-color:#f3786d;
 
 //titles
 $card-color: $ca-palette-paper;
@@ -22,13 +23,18 @@ $grey-light: $beige-light;
 $title-weight: 550;
 $body-background-color: #fde2f6;
 $background: #FCEAFF;
+$secondColour: rgb(186, 137, 247);
+$light: #FFF6FF;
+//sizes
+$size-1: 3.5rem;
+
+//heros 
+$info: #FCEAFF;
 $primary: #B97AEC;
 $warning: rgb(244, 213, 248);
 $yellow-invert: #636463;
 $primary-hero: #B97AEC;
-$secondColour: rgb(186, 137, 247);
-$light: #FFF6FF;
-$info: #FCEAFF;
+
 //links
 $link-hover-background: #FFA2BC;
 $link: $background; //ALL Links
