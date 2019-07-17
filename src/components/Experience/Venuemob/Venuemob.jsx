@@ -9,8 +9,7 @@ class Venuemob extends React.Component {
     return (
       <section className="section">
         <a
-          className="image column employers"
-        >
+          className="image column employers">
           <ExperienceImage imageRef={VenuemobImage} imageName={VenuemobImage} />
         </a>
         <h1 className="subtitle experience-info"> Full Stack Developer </h1>
@@ -46,10 +45,7 @@ class Venuemob extends React.Component {
           On a day to day basis I did peer programming, mentoring, regular code
           reviews and behaviour driven development.
         </p>
-        <ExperienceInfo
-          experienceName={this.state.company}
-          title={this.state.title}
-        />
+
       </section>
     );
   }
