@@ -1,7 +1,6 @@
 import React from 'react';
 import '../experience.scss';
 import ExperienceImage from '../ExperienceImage/ExperienceImage';
-import ExperienceInfo from '../ExperienceInfo/ExperienceInfo';
 import VenuemobImage from '../../../img/venuemob.png';
 
 class Venuemob extends React.Component {
@@ -15,11 +14,12 @@ class Venuemob extends React.Component {
         <h1 className="subtitle experience-info"> Full Stack Developer </h1>
         <h2 className="subtitle"> </h2>
         <p className="content experience-info">
-          A member of the development team building on the existing Venuemob
-          platform.
+          A member of the development team building on the Venuemob platform.
           <br />
-          I worked on decommissioning two large codebases, A node.js api and a
-          PHP application into new micro-services.
+          <br />
+          I worked on decommissioning two codebases: 
+          <br />
+          A node.js api and a PHP application into new micro-services.
           <br />
           <br />
           This involved moving existing internal and external workflows and
@@ -32,7 +32,10 @@ class Venuemob extends React.Component {
           <br />
           Managing internal clients & external client data & their interactions.
           <br />
-          A notification api for sending emails, sending slack notifications &
+          <br />
+          A notification API for:
+          <br />
+          sending emails, sending slack notifications &
           updating workflows for internal and external use.
           <br />
           Managing internal booking information for venues.

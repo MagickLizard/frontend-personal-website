@@ -4,6 +4,7 @@ import Message from './components/Message/Message';
 import ImageList from './components/IconList/iconList';
 import Employers from './components/Experience/Experience';
 import Venuemob from './components/Experience/Venuemob/Venuemob';
+import Myob from './components/Experience/Myob/Myob';
 import SearchBar from './components/Youtube/SearchBar/SearchBar';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
@@ -68,6 +69,11 @@ class App extends Component {
           <div className="container">
             <Venuemob />
           </div>
+        </section>
+        <section className="hero is-warning">
+          <div className="container">
+            <Myob />
+            </div>
         </section>
       </div>
     );

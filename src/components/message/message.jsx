@@ -31,12 +31,10 @@ class Message extends React.Component {
                 better for the next developer.
               </p>
               <p className="content">
-                I am currently learning React (this website is using React and
-                Bulma).
+                I am currently learning React and Bulma.
               </p>
             </div>
           </div>
-          
           <br />
           <br />
           <br />
