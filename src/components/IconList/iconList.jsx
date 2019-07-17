@@ -10,15 +10,14 @@ class IconList extends React.Component {
           <h2 className="title heroTitle">Tech stack</h2>
         </div>
         <section className="section">
-            <div className="columns">
+            <div className="columns is-flex is-horizontal-center">
               <Icon name="fa-node"> </Icon>
               <Icon name="fa-node-js"> </Icon>
               <Icon name="fa-react"> </Icon>
               <Icon name="fa-angular"> </Icon>
               <Icon name="fas fa-database"> </Icon>
             </div>
-          <br />
-            <div className="columns">
+            <div className="columns is-flex is-horizontal-center">
             <Icon name="fa-html5"> </Icon>
               <Icon name="fa-java"> </Icon>
               <Icon name="fa-css3-alt"> </Icon>
