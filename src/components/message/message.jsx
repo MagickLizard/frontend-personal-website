@@ -40,13 +40,13 @@ class Message extends React.Component {
           <br />
           <br />
           <div className="has-text-centered">
-            <a href="/">
+            {/* <a href="/"> */}
             <span className="icon is-large">
               <span className="fa-stack fa-lg">
                 <i className="fas fa-angle-down" />
               </span>
             </span>
-          </a>
+          {/* </a> */}
           </div>
         </div>
       </div>
