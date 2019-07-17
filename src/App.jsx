@@ -6,23 +6,11 @@ import Employers from './components/Experience/Experience';
 
 import Venuemob from './components/Experience/Venuemob/Venuemob';
 import SearchBar from './components/Youtube/SearchBar/SearchBar';
-import ApiYoutube from './api/apiYoutube';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
 import background from './img/background3.jpg';
 
 class App extends Component {
-  state = { videos: [] };
-  onSearchTermSubmit = async (term) => {
-    const response = await ApiYoutube.get('/search', {
-      params: {
-        q: term
-      }
-    });
-    this.setState({
-      videos: response.data.items
-    });
-  };
   homePage = () => {
     return (
       <div className="MainContainer">

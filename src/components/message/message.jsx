@@ -7,12 +7,12 @@ class Message extends React.Component {
     return (
       <div className="section">
       <div className="columns">
-        <div className="column is-2 is-flex is-horizontal-center">
+        <div className="column is-4 is-flex is-horizontal-center">
           <figure className="image is-128x128">
             <img className="is-rounded" src={ImageOfMe} alt="me" />
           </figure>
         </div>
-        <div className="column is-10">
+        <div className="column is-8">
           <div className="card-content message-body">
             <h2 className="title">  I'm lizzie!</h2>
             <h2 className="subtitle">
