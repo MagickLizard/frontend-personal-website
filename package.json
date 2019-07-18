@@ -11,7 +11,8 @@
     "react-accessible-accordion": "^2.4.5",
     "react-dom": "^16.8.4",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "styled-components": "^4.3.2"
   },
   "repository": {
     "type": "git",

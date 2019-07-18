@@ -14,7 +14,6 @@ class Myob extends React.Component {
               <ExperienceImage imageRef={MyobImage} imageName={MyobImage} />
             </div>
             <h1 className="title is-6"> Software Developer </h1>
-  
             <p className="content">
               Part of support experience team responsible for across the
               website.

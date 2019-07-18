@@ -9,8 +9,48 @@ import SearchBar from './components/Youtube/SearchBar/SearchBar';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
 import background from './img/background3.jpg';
+import styled from 'styled-components';
+const Gradient = styled.section`
+	position: relative;
+  width: 100%;
 
+background-image: linear-gradient(${props => props.background}deg, #FFA2BC,#B97AEC) !important;
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 40px;
+		background-color: skyBlue;
+		background-position: 100% 0;
+		color: transparent;
+		-webkit-transition: .05s .1s;
+		-webkit-background-clip: text;
+		cursor: pointer;
+		text-align: center;
+		
+		&:hover {
+			background-position: 0 0;
+			color: transparent;
+			transition: .1s 0;
+		}
+
+}
+`;
 class App extends Component {
+  state = { x: 0, y: 0, direction: '' };
+  _onMouseMove(event) {
+    if( event.screenX > 0) {
+      this.setState({ direction: 90});
+    }
+    if(event.screenY > -650) {
+      this.setState({ direction: 180});
+    }
+    else {
+      this.setState({ direction: 260});
+    }
+    this.setState({ x: event.screenX, y: event.screenY });
+  }
+
   messageComponent = () => {
     return (
       <div className="section">
@@ -82,7 +122,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <section className="hero is-primary is-fullheight has-background is-bold">
+          <Gradient className="hero is-primary is-fullheight has-background is-bold" onMouseMove={this._onMouseMove.bind(this)} background={this.state.direction}> 
             <img
               className="img hero-background is-transparent"
               src={background}
@@ -91,7 +131,8 @@ class App extends Component {
             <Navbar />
             <Route path="/" exact component={this.messageComponent} />
             <Route path="/projects" exact component={this.projectPage} />
-          </section>
+            </Gradient>
+
           <Route path="/" exact component={this.iconComponent} />
           <Route path="/" exact component={this.experienceComponent} />
           <Route

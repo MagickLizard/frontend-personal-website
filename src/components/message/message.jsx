@@ -5,7 +5,7 @@ import './message.scss';
 class Message extends React.Component {
   render() {
     return (
-      <div className="section">
+      <section className="section">
         <div className="section container">
           <div className="columns">
             <div className="column is-4 is-flex is-horizontal-center">
@@ -15,7 +15,8 @@ class Message extends React.Component {
             </div>
             <div className="column is-8">
               <div className="card-content message-body">
-              <h2 className="title is-1"> I'm lizzie</h2>
+              <h2 className="title is-1"> Hi, I'm lizzie</h2>
+        
                 <div className="content">
                 <h2 className="subtitle">
                   <a href="https://github.com/MagickLizard">@magicklizard</a>
@@ -52,7 +53,7 @@ class Message extends React.Component {
           {/* </a> */}
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

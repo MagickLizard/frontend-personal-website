@@ -4,7 +4,8 @@
 }
 $brown: #FFF6FF; // text color
 $beige-light: rgb(233, 232, 227);
-// $family-sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+// $family-sans-serif: 'Montserrat', Helvetica, Arial, sans-serif;
 // Primary colours
 $ca-palette-paper: #f2edde;
 
@@ -62,11 +63,7 @@ $radius: 0px;
 // $radius-small: 10px;
 $easing: ease-in;
 $tabs-link-hover-color: #4B4453 !important;
-// a:hover {
-//   background-color: $link-hover-background; //TO FIX
-//   opacity: 0.9;
-//   transition: 0.5s;
-// }
+
 $tabs-boxed-link-radius: 20px;
 $tabs-toggle-link-radius: 20px;
 .heroTitle {
