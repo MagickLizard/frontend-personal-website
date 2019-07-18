@@ -4,9 +4,6 @@
 }
 $brown: #FFF6FF; // text color
 $beige-light: rgb(233, 232, 227);
-// @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
-// $family-sans-serif: 'Montserrat', Helvetica, Arial, sans-serif;
-// Primary colours
 $ca-palette-paper: #f2edde;
 
 // Text colours
@@ -31,10 +28,12 @@ $size-1: 3rem;
 
 //heros 
 $info: #FCEAFF;
-$primary: #B97AEC;
+$primary: #FFA2BC;
+$warning:  rgb(212, 165, 250);
+$info-invert: #6e6e6e;
+$warning-invert: #6e6e6e;
+$primary-hero: rgb(212, 165, 250);
 $warning: rgb(244, 213, 248);
-$yellow-invert: #636463;
-$primary-hero: #B97AEC;
 
 //links
 $link-hover-background: #FFA2BC;
@@ -43,15 +42,9 @@ $link: $background; //ALL Links
 $icon-dimensions-large: 5rem;
 
 // navbar
-$navbar-dropdown-arrow: $background;
-$navbar-background-color:$secondColour;
-$navbar-dropdown-arrow-hover-color: $background;
-$navbar-item-color: $background;
-$navbar-dropdown-background-color: $secondColour;
-$navbar-dropdown-item-active-color: rgb(41, 40, 40);
-$navbar-dropdown-item-hover-background-color: transparent;
-$navbar-dropdown-item-hover-color: #9672C6;
-$navbar-item-hover-background-color: rgba(202, 152, 243, 0.911);
+$navbar-dropdown-background-color: transparent;
+$navbar-dropdown-item-hover-color: rgb(244, 213, 248); //dropdown item text
+$navbar-item-hover-background-color: rgb(250, 148, 177);
 
 
 // icon

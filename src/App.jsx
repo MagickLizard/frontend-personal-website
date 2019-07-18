@@ -16,21 +16,17 @@ const Gradient = styled.section`
 
 background-image: linear-gradient(${props => props.background}deg, #FFA2BC,#B97AEC) !important;
 	h1 {
-		position: absolute;
-		top: 50%;
-		left: 50%;
 		font-size: 40px;
 		background-position: 100% 0;
 		color: transparent;
-		-webkit-transition: .05s .1s;
+		-webkit-transition: .5s .1s;
 		-webkit-background-clip: text;
 		cursor: pointer;
-		text-align: center;
 		
 		&:hover {
 			background-position: 0 0;
-			color: transparent;
-			transition: 0.5s 0;
+      color: transparent;
+			transition: 12s 0;
 		}
 
 }

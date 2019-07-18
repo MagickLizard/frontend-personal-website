@@ -1,3 +1,10 @@
 .is-horizontal-center {
   justify-content: center;
 }
+.imageOfMe { 
+  opacity: 0.8;
+  &:hover {
+    color: transparent;
+    opacity: 0.7;
+  }
+}

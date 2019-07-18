@@ -10,7 +10,7 @@ class Message extends React.Component {
           <div className="columns">
             <div className="column is-4 is-flex is-horizontal-center">
               <figure className="image is-128x128">
-                <img className="is-rounded" src={ImageOfMe} alt="me" />
+                <img className="is-rounded imageOfMe" src={ImageOfMe} alt="me" />
               </figure>
             </div>
             <div className="column is-8">

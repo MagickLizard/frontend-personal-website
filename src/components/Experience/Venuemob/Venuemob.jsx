@@ -15,16 +15,16 @@ class Venuemob extends React.Component {
           className="image column employers">
           <ExperienceImage imageRef={VenuemobImage} imageName={VenuemobImage} />
         </div>
-        <h1 className="title is-6 experience-info"> Full Stack Developer </h1>
-        <p className="content experience-info">
+        <h1 className="title is-6"> Full Stack Developer </h1>
+        <p className="content">
           A member of the development team building on the Venuemob platform.
 
           </p>
-          <h3 className="title is-6 experience-info">
+          <h3 className="title is-6">
           I worked on decommissioning two codebases: 
           </h3>
 
-          <p className="content experience-info">
+          <p className="content">
           A node.js api and a PHP application into new micro-services.
           <br />
           <br />
