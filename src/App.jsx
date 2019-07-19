@@ -16,14 +16,11 @@ const Gradient = styled.section`
 background-image: linear-gradient(${props => props.background}deg, #FFA2BC,#B97AEC) !important;
 	h1 {
 		font-size: 40px;
-		background-position: 100% 0;
-		color: transparent;
 		-webkit-transition: .5s .1s;
 		-webkit-background-clip: text;
 		cursor: pointer;
 		
 		&:hover {
-			background-position: 0 0;
       color: transparent;
       transition-duration: 5s;
       transition-timing-function: linear;
@@ -36,15 +33,6 @@ background-image: linear-gradient(${props => props.background}deg, #FFA2BC,#B97A
 class App extends Component {
   state = { x: 0, y: 0, direction: '' };
   _onMouseMove(event) {
-    if(event.screenX > 0 && event.screenY < 0) {
-      this.setState({ direction: event.screenX });
-    }
-    else if(event.screenY > 0 && event.screenX < 0) {
-      this.setState({ direction: event.screenY });
-    }
-    else {
-      this.setState({ direction: event.screenY });
-    }
     this.setState({ x: event.screenX, y: event.screenY });
   }
 
@@ -98,7 +86,7 @@ class App extends Component {
     return (
       <div>
         <section className="hero is-primary is-bold is-large">
-          <div className="">
+          <div>
             <Employers />
           </div>
         </section>
@@ -119,7 +107,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-        <Gradient className="hero is-primary is-fullheight has-background" onMouseMove={this._onMouseMove.bind(this)} background={this.state.direction}> 
+        <Gradient className="hero is-primary is-fullheight has-background" onMouseMove={this._onMouseMove.bind(this)} background={this.state.y}> 
 
             <img
               className="img hero-background is-transparent"

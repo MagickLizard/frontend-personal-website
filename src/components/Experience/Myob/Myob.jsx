@@ -18,10 +18,9 @@ class Myob extends React.Component {
         </section>
         <div className="container columns">
           <div className="column is-2" />
-
           <div className="column is-4">
             <h3 className="title is-6">
-              Some Frontend contributions
+               Contributions
             </h3>
             <p className="content">
               Some components I built include the core navigation, navigation for a internal sub-site and the price calculator.
@@ -39,9 +38,6 @@ class Myob extends React.Component {
             </p>
           </div>
           <div className="column is-4">
-              <h3 className="title is-6">
-                Some other contributions
-              </h3>
               <p className="content">
               Converted a SOAP API into a RESTful API micro-service.
               <br />
