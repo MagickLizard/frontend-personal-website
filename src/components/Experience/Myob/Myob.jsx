@@ -25,15 +25,16 @@ class Myob extends React.Component {
             <p className="content">
               Some components I built include the core navigation, navigation for a internal sub-site and the price calculator.
               <br />
+            <br />
               Daily use of ES6 standards.
               <br />
               Writing test cases using Mocha, Jasmine and nock.
               <br />
+            <br />
               Contributed to move of components from Bootstrap to Zurb
               Foundation-Sites Framework.
               <br />
               <br />
- 
               <br />
             </p>
           </div>

@@ -21,17 +21,18 @@ class Venuemob extends React.Component {
             <h3 className="title is-6 experience-info">
               Contributions
             </h3>
+
+            Api's I have deployed into production include:
+            <br /> 
+            <br />
             Managing internal clients & external client data & their
             interactions.
             <br />
             <br />
-            A notification API for:
-            <br />
-            notifications & updating workflows for internal and external use.
-            <br />
-            Managing internal booking information for venues.
+            A notification API for updating workflows and notifications internally and externally.
             <br />
             <br />
+            Managing booking information for venues.
             <p className="content" />
           </div>
           <div className="column is-4">
