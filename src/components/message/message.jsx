@@ -37,7 +37,7 @@ class Message extends React.Component {
                     is better for the next developer.
                   </p>
                   <p className="content">
-                    I am currently learning React and Bulma.
+                    I am currently upskilling on React and Bulma.
                   </p>
                 </div>
               </div>

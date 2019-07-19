@@ -6,7 +6,6 @@ class Experience extends React.Component {
     return (
       <section className="section">
           <h1 className="title is-1 is-flex is-horizontal-center">Previous Experience</h1>
-    
       </section>
     );
   }

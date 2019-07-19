@@ -4,6 +4,7 @@ import Message from './components/Message/message'
 import ImageList from './components/IconList/iconList';
 import Employers from './components/Experience/Experience';
 import Venuemob from './components/Experience/Venuemob/Venuemob';
+import DeloitteComp from './components/Experience/Deloitte/Deloitte';
 import Myob from './components/Experience/Myob/Myob';
 import SearchBar from './components/Youtube/SearchBar/SearchBar';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
@@ -100,6 +101,11 @@ class App extends Component {
             <Myob />
             </div>
         </section>
+        <section className="hero is-light">
+          <div className="container">
+            <DeloitteComp />
+            </div>
+        </section>
       </div>
     );
   };
@@ -121,11 +127,11 @@ class App extends Component {
 
           <Route path="/" exact component={this.iconComponent} />
           <Route path="/" exact component={this.experienceComponent} />
-          <Route
+          {/* <Route
             path="/experience"
             exact
             component={this.experienceComponent}
-          />
+          /> */}
         </Router>
       </div>
     );
