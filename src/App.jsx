@@ -86,7 +86,7 @@ class App extends Component {
   experienceComponent = () => {
     return (
       <div>
-        <section className="hero is-primary is-bold is-large">
+        <section className="hero is-danger is-bold is-large">
           <div>
             <Employers />
           </div>
@@ -101,7 +101,7 @@ class App extends Component {
             <Myob />
             </div>
         </section>
-        <section className="hero is-light">
+        <section className="hero is-success">
           <div className="container">
             <DeloitteComp />
             </div>

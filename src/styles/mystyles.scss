@@ -30,11 +30,12 @@ $body-font-size: 0.9em;
 //heros 
 $info: #FCEAFF;
 $primary: #FFA2BC;
-$warning:  rgb(212, 165, 250);
+$danger: #FFA2BC;
+$warning: rgb(244, 213, 248);
+$success-invert: #6e6e6e;
 $info-invert: #6e6e6e;
 $warning-invert: #6e6e6e;
-$primary-hero: rgb(212, 165, 250);
-$warning: rgb(244, 213, 248);
+$success: rgb(253, 215, 244);
 
 //links
 $link-hover-background: #FFA2BC;
