@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar';
-import Message from './components/Message/Message';
+import Message from './components/Message/message'
 import ImageList from './components/IconList/iconList';
 import Employers from './components/Experience/Experience';
 import Venuemob from './components/Experience/Venuemob/Venuemob';
@@ -13,7 +13,6 @@ import styled from 'styled-components';
 const Gradient = styled.section`
 	position: relative;
   width: 100%;
-
 background-image: linear-gradient(${props => props.background}deg, #FFA2BC,#B97AEC) !important;
 	h1 {
 		font-size: 40px;
@@ -26,7 +25,10 @@ background-image: linear-gradient(${props => props.background}deg, #FFA2BC,#B97A
 		&:hover {
 			background-position: 0 0;
       color: transparent;
-			transition: 12s 0;
+      transition-duration: 5s;
+      transition-timing-function: linear;
+      animation: smooth;
+      animation-delay: 10s;
 		}
 
 }
@@ -34,7 +36,15 @@ background-image: linear-gradient(${props => props.background}deg, #FFA2BC,#B97A
 class App extends Component {
   state = { x: 0, y: 0, direction: '' };
   _onMouseMove(event) {
-
+    if(event.screenX > 0 && event.screenY < 0) {
+      this.setState({ direction: event.screenX });
+    }
+    else if(event.screenY > 0 && event.screenX < 0) {
+      this.setState({ direction: event.screenY });
+    }
+    else {
+      this.setState({ direction: event.screenY });
+    }
     this.setState({ x: event.screenX, y: event.screenY });
   }
 
@@ -109,7 +119,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-        <Gradient className="hero is-primary is-fullheight has-background" onMouseMove={this._onMouseMove.bind(this)} background={this.state.y}> 
+        <Gradient className="hero is-primary is-fullheight has-background" onMouseMove={this._onMouseMove.bind(this)} background={this.state.direction}> 
 
             <img
               className="img hero-background is-transparent"
