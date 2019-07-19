@@ -23,7 +23,7 @@ class Message extends React.Component {
 
                 <div className="content">
                   <h2 className="subtitle">
-                    <a href="https://github.com/MagickLizard">@magicklizard</a>
+                    <a className="linkMessage"href="https://github.com/MagickLizard">@magicklizard</a>
                   </h2>
                   <p className="content">
                     I have unquestionable desire to make things better than the

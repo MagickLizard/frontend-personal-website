@@ -1,7 +1,7 @@
 .is-horizontal-center {
   justify-content: center;
 }
-.imageOfMe { 
+.imageOfMe {
   opacity: 0.8;
   &:hover {
     color: transparent;
@@ -9,5 +9,11 @@
   }
 }
 .hugeIcon {
-  font-size:25em;
+  font-size: 25em;
+}
+.linkMessage {
+  &:hover {
+    background-color: rgb(250, 148, 177);
+    opacity: 0.9;
+  }
 }
