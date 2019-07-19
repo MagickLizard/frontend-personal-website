@@ -39,7 +39,7 @@ class App extends Component {
 
   messageComponent = () => {
     return (
-      <div className="section">
+      <div>
         <Message> </Message>
       </div>
     );
@@ -56,9 +56,9 @@ class App extends Component {
               <li>
                 <a href="/projects"> Side projects</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/experience"> Tech stack</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
@@ -127,11 +127,6 @@ class App extends Component {
 
           <Route path="/" exact component={this.iconComponent} />
           <Route path="/" exact component={this.experienceComponent} />
-          {/* <Route
-            path="/experience"
-            exact
-            component={this.experienceComponent}
-          /> */}
         </Router>
       </div>
     );
