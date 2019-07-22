@@ -1,6 +1,6 @@
 import React from 'react';
 import './navbar.scss';
-import LizardLogo from '../../img/dragon.png';
+import LizardLogo from '../../img/dragonsmall.png';
 class NavBar extends React.Component {
   render() {
     return (

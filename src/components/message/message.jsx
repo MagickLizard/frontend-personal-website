@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageOfMe from '../../img/me.jpg';
+import ImageOfMe from '../../img/mequality.jpg';
 import './message.scss';
 
 class Message extends React.Component {

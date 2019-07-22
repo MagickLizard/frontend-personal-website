@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 .html {
   background-color: #B97AEC;
 }
@@ -10,7 +11,12 @@ $ca-palette-paper: #f2edde;
 $text-color:#3e4543;
 
 //tile
+// $family-sans-serif: "Montserrat", sans-serif, arial;
 
+.title, h1,h2 {
+  font-family: 'Montserrat', sans-serif, arial;
+  font-weight: 700;
+}
 //titles
 $card-color: $ca-palette-paper;
 $title-color: #9672C6;

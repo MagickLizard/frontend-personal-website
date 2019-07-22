@@ -11,52 +11,10 @@
     height: 100%;
     &.is-transparent {
       opacity: 0.2;
-      -webkit-filter: blur(0.3px);
+      // -webkit-filter: blur(0.3px);
     }
   }
 }
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
-
-.title, h1,h2 {
-  font-family: 'Montserrat', sans-serif, arial;
-  font-weight: 700;
-}
-
-/* Tiny reset thingy */
-// body,html{margin:0;padding:0;}
-
-.wrapper {
-  /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
-}
-
-.sectionScroll {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 85vh;
-
-  /* For text formatting. */
-  // display: flex;
-}
-.sectionScrollsmall {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 65vh;
-
-  /* For text formatting. */
-  // display: flex;
-}
-
 .parallax::after {
   /* Display and position the pseudo-element */
   content: ' ';

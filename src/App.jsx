@@ -9,7 +9,8 @@ import Myob from './components/Experience/Myob/Myob';
 import SearchBar from './components/Youtube/SearchBar/SearchBar';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
-import background from './img/background3.jpg';
+import background from './img/background3small.jpg';
+
 import styled from 'styled-components';
 const Gradient = styled.section`
 	position: relative;
@@ -32,36 +33,14 @@ background-image: linear-gradient(${props => props.background}deg, #FFA2BC,#B97A
 }
 `;
 class App extends Component {
-  state = { x: 0, y: 0, direction: '' };
+  state = { x: 0, y: 0, direction: '', loading: false };
   _onMouseMove(event) {
     this.setState({ x: event.screenX, y: event.screenY });
   }
-
   messageComponent = () => {
     return (
       <div>
-        <Message> </Message>
-      </div>
-    );
-  };
-  footer = () => {
-    return (
-      <div className="hero-foot">
-        <nav className="tabs">
-          <div className="container">
-            <ul>
-              <li className="is-active">
-                <a href="/experience">Overview</a>
-              </li>
-              <li>
-                <a href="/projects"> Side projects</a>
-              </li>
-              {/* <li>
-                <a href="/experience"> Tech stack</a>
-              </li> */}
-            </ul>
-          </div>
-        </nav>
+        <Message> </Message>   
       </div>
     );
   };
@@ -111,10 +90,11 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="App">
+      <div className="App" >
+        <div className={`control ${this.state.loading ? "is-large is-loading" : ""}`}>
+     
         <Router>
         <Gradient className="hero is-primary is-fullheight has-background" onMouseMove={this._onMouseMove.bind(this)} background={this.state.y}> 
-
             <img
               className="img hero-background is-transparent"
               src={background}
@@ -128,6 +108,7 @@ class App extends Component {
           <Route path="/" exact component={this.iconComponent} />
           <Route path="/" exact component={this.experienceComponent} />
         </Router>
+      </div>
       </div>
     );
   }
