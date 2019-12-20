@@ -11,11 +11,10 @@ $ca-palette-paper: #f2edde;
 $text-color:#3e4543;
 
 //tile
-// $family-sans-serif: "Montserrat", sans-serif, arial;
 
 .title, h1,h2 {
   font-family: 'Montserrat', sans-serif, arial;
-  font-weight: 700;
+  font-weight: 600;
 }
 //titles
 $card-color: $ca-palette-paper;
@@ -60,7 +59,6 @@ $icon-dimensions-large: 5rem;
 $icon-dimensions-medium: 3rem;
 
 $radius: 0px;
-// $radius-small: 10px;
 $easing: ease-in;
 $tabs-link-hover-color: #4B4453 !important;
 

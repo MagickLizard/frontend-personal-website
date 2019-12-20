@@ -17,10 +17,9 @@ class Message extends React.Component {
                 />
               </figure>
             </div>
-            <div className="column is-8">
+            <div className="container column is-8">
               <div className="card-content message-body">
                 <h2 className="title is-1"> Hi, I'm lizzie</h2>
-
                 <div className="content">
                   <h2 className="subtitle">
                     <a className="linkMessage"href="https://github.com/MagickLizard">@magicklizard</a>
@@ -49,13 +48,11 @@ class Message extends React.Component {
           <br />
           <br />
           <div className="has-text-centered">
-            {/* <a href="/"> */}
             <span className="icon is-large">
               <span className="fa-stack fa-lg">
                 <i className="fas fa-angle-down" />
               </span>
             </span>
-            {/* </a> */}
           </div>
         </div>
       </section>

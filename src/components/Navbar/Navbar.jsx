@@ -45,15 +45,9 @@ class NavBar extends React.Component {
                 </span>
               </a>
               <div className="navbar-dropdown is-dark">
-                {/* <a className="navbar-item" href="/projects">
-                  Iternary builder project
-                </a> */}
                 <a className="navbar-item" href="/projects">
-                  Youtube api project
+                  Travel Iternary project
                 </a>
-                {/* <a className="navbar-item" href="/projects">
-                  Image display project
-                </a> */}
               </div>
             </div>
           </div>
@@ -74,7 +68,7 @@ class NavBar extends React.Component {
                   href="https://www.linkedin.com/in/elizabeth-king-11a978a2"
                 >
                   <span className="icon">
-                    <i className="fab fa-linkedin-in" alt="lizzie's linkedin" />
+                    <i className="fab fa-linkedin" alt="lizzie's linkedin" />
                   </span>
                 </a>
               </div>
