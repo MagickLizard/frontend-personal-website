@@ -1,12 +1,17 @@
 import React from 'react';
 import ImageOfMe from '../../img/mequality.jpg';
 import './message.scss';
-
 class Message extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+}
+scrollToFilters = () => {
+  window.scrollTo({ top: 460, behavior: 'smooth' })
+}
   render() {
     return (
-      <section className="section">
-        <div className="section container">
+        <div className="container">
           <div className="columns">
             <div className="column is-4 is-flex is-horizontal-center">
               <figure className="image is-128x128">
@@ -17,7 +22,7 @@ class Message extends React.Component {
                 />
               </figure>
             </div>
-            <div className="container column is-8">
+            <div className="column is-8">
               <div className="card-content message-body">
                 <h2 className="title is-1"> Hi, I'm lizzie</h2>
                 <div className="content">
@@ -43,19 +48,11 @@ class Message extends React.Component {
               <br />
             </div>
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <div className="has-text-centered">
-            <span className="icon is-large">
-              <span className="fa-stack fa-lg">
+              <div onClick={this.scrollToFilters} className="icon is-large fa-stack fa-lg has-text-centered icon-button">
                 <i className="fas fa-angle-down" />
-              </span>
-            </span>
-          </div>
+              </div>
+
         </div>
-      </section>
     );
   }
 }

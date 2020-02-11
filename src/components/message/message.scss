@@ -1,19 +1,28 @@
-.is-horizontal-center {
-  justify-content: center;
-}
-.imageOfMe {
-  opacity: 0.8;
-  &:hover {
-    color: transparent;
-    opacity: 0.7;
-  }
-}
-.hugeIcon {
-  font-size: 25em;
-}
-.linkMessage {
-  &:hover {
-    background-color: rgb(250, 148, 177);
-    opacity: 0.9;
-  }
+.messageSection {
+	height: 70vh;
+	.is-horizontal-center {
+		justify-content: center;
+	}
+	.imageOfMe {
+		opacity: 0.8;
+		&:hover {
+			color: transparent;
+			opacity: 0.7;
+		}
+	}
+	.hugeIcon {
+		font-size: 25em;
+	}
+	.linkMessage {
+		&:hover {
+			background-color: rgb(250, 148, 177);
+			opacity: 0.9;
+		}
+	}
+	.icon-button {
+		&:hover {
+			cursor: pointer;
+		}
+		width: 100%;
+	}
 }

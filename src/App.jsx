@@ -5,6 +5,7 @@ import ImageList from './components/IconList/iconList';
 import Employers from './components/Experience/Experience';
 import Venuemob from './components/Experience/Venuemob/Venuemob';
 import DeloitteComp from './components/Experience/Deloitte/Deloitte';
+import DeloitteFed from './components/Experience/Deloitte/DeloitteFed';
 import Myob from './components/Experience/Myob/Myob';
 import SearchBar from './components/Youtube/SearchBar/SearchBar';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
@@ -39,7 +40,7 @@ class App extends Component {
   }
   messageComponent = () => {
     return (
-      <div>
+      <div className="messageSection">
         <Message> </Message>   
       </div>
     );
@@ -75,6 +76,11 @@ class App extends Component {
             <Venuemob />
           </div>
         </section>
+        <section className="hero is-success">
+          <div className="container">
+            <DeloitteFed />
+            </div>
+        </section>
         <section className="hero is-warning">
           <div className="container">
             <Myob />
@@ -92,9 +98,8 @@ class App extends Component {
     return (
       <div className="App" >
         <div className={`control ${this.state.loading ? "is-large is-loading" : ""}`}>
-     
         <Router>
-        <Gradient className="hero is-primary is-fullheight has-background" onMouseMove={this._onMouseMove.bind(this)} background={this.state.y}> 
+        <Gradient className="hero is-primary is-fullheight has-background hero-background" onMouseMove={this._onMouseMove.bind(this)} background={this.state.y}> 
             <img
               className="img hero-background is-transparent"
               src={background}
@@ -104,9 +109,9 @@ class App extends Component {
             <Route path="/" exact component={this.messageComponent} />
             <Route path="/projects" exact component={this.projectPage} />
             </Gradient>
-
           <Route path="/" exact component={this.iconComponent} />
           <Route path="/" exact component={this.experienceComponent} />
+          
         </Router>
       </div>
       </div>
