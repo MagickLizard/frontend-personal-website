@@ -71,15 +71,15 @@ class App extends Component {
             <Employers />
           </div>
         </section>
-        <section className="hero is-info">
-          <div className="container">
-            <Venuemob />
-          </div>
-        </section>
         <section className="hero is-success">
           <div className="container">
             <DeloitteFed />
             </div>
+        </section>
+        <section className="hero is-info">
+          <div className="container">
+            <Venuemob />
+          </div>
         </section>
         <section className="hero is-warning">
           <div className="container">
