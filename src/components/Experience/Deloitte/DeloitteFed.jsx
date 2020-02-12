@@ -38,9 +38,6 @@ class DeloitteFed extends React.Component {
 						SCSS, Ecmascript, React, Gatsby
 						<br />
 						<br />
-						Using CSS pre-processors & JS libraries such as: Styled-components,
-						SCSS, Ecmascript, React, Gatsby.
-						<br />
 					</div>
 					<div className='column is-4'>
 						<h3 className='title is-6 experience-info'>Client work</h3>
