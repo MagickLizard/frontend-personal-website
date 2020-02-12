@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import Message from './components/Message/Message'
 import ImageList from './components/IconList/iconList'
 import ExperienceList from './components/Experience/ExperienceList'
-import SearchBar from './components/Youtube/SearchBar/SearchBar'
+import YoutubeSection from './components/Youtube/YoutubeSection'
 import { hot } from 'react-hot-loader/root'
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 import ProgressiveImage from 'react-progressive-image-loading'
@@ -48,25 +48,16 @@ class App extends Component {
 	}
 	projectPage = () => {
 		return (
-			<div>
-				<section className='hero has-background'>
-					<SearchBar searchTerm={this.onSearchTermSubmit} />
-				</section>
-			</div>
-		)
+          <YoutubeSection/>
+          )
 	}
 	iconComponent = () => {
 		return (
-			<section className='hero is-light'>
-				<div>
-					<ImageList />
-				</div>
-			</section>
+				<ImageList />
 		)
 	}
 	experienceComponent = () => {
-		return (<ExperienceList>
-      </ExperienceList>
+		return (<ExperienceList/>
 		)
 	}
 	render() {
