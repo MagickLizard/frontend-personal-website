@@ -20,6 +20,10 @@
 		}
 	}
 	.icon-button {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
 		&:hover {
 			cursor: pointer;
 		}
