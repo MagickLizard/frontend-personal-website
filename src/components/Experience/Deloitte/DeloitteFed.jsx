@@ -18,40 +18,50 @@ class DeloitteFed extends React.Component {
 				<div className='container columns'>
 					<div className='column is-2' />
 					<div className='column is-4 experience-info'>
+          <h3 className='title is-6 experience-info'>Front end Developer</h3>
 						<h3 className='title is-6 experience-info'>Contributions</h3>
-						As part of my role I do the following: Follow agile & SCRUM
-						methodologies of retrospective, iterative action taking, planning &
-						grooming. Pair programming, mentoring & code reviews.
-						<br />
-						Support & guide developers from a technical perspective.
-						<br />
-						<br />
-						Test cases using Jest.
-						<br />
+						As part of my role I do the following: 
+            <li>Use agile methodologies (SCRUM, Kanban) of retrospective, iterative action taking, planning &
+						grooming.
+            </li>
+            <li>
+            Pair programming, mentoring & code reviews.
+            </li>
+						 <li>
+             Support & guide developers from a technical perspective.
+             </li>
+             <li>
+             Test cases using Jest and mocha.
+             </li>
 						<br />
 						Using CSS pre-processors & JS libraries such as: Styled-components,
 						SCSS, Ecmascript, React, Gatsby
 						<br />
-						<p className='content' />
+						<br />
+						Using CSS pre-processors & JS libraries such as: Styled-components,
+						SCSS, Ecmascript, React, Gatsby.
+						<br />
 					</div>
 					<div className='column is-4'>
 						<h3 className='title is-6 experience-info'>Client work</h3>
 						<p className='content experience-info'>
 							Focused on redesigning & recreating a marketing website including
-							recipes, filtering and creating components to be used across
+							how to guides, filtering and creating reusable components to be used across
 							multiple client businesses.
 							<br />
+							Integrated & extending upon client style guides & code bases (SCSS, HTML, React). 
+              <br />
+              Built out new responsive components in React, & SCSS including: 
+              <li> Horizontal and side panel filters (checkboxes &
+							responsive variations) </li>
+              <li> Result Cards, preview cards, accordion, Checkbox lists, item lists, modal and GST calculator.</li>
 							<br />
-							• Integrated & extending upon style guides & code bases (CSS,
-							HTML, React). • Built out new responsive components in React, &
-							SCSS including: Horizontal and side panel filters (checkboxes &
-							responsive variations), Result Cards, accordions, Checkbox lists,
-							modal, calculator.
-							<br />
-							<br />• Built out new responsive components in HTML5, SCSS &
-							Jquery including: Hero Banners, Header, Side menu, Ingredients
-							list • Extended upon existing Jquery components including: • Side
-							navigation menu used on mobile • Search form submission
+              Built out new responsive components in HTML5, SCSS &
+							Jquery including: Hero Banners, Header, Side menu and content list
+              <br />
+               Extended upon existing Jquery components including:
+              <li>Side navigation menu used on mobile </li>
+              <li>Search form submission </li>
 						</p>
 					</div>
 				</div>
