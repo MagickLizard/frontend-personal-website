@@ -25,8 +25,7 @@ class Message extends React.Component {
 								<h2 className='subtitle'>
 									<a
 										className='linkMessage'
-										href='https://github.com/MagickLizard'
-									>
+										href='https://github.com/MagickLizard'>
 										@magicklizard
 									</a>
 								</h2>
@@ -37,23 +36,20 @@ class Message extends React.Component {
 								<p className='content is-horizontal-center'>
 									#javascriptislife
 								</p>
-								<p>
-									I enjoy refactoring code bases into micro-services so code is
-									better for the next developer.
-								</p>
 								<p className='content'>
-									I am currently upskilling on React and Bulma.
+									I am currently focusing on React :)
 								</p>
 							</div>
 						</div>
-						<br />
 					</div>
 				</div>
+        <div>
 				<button
 					onClick={this.scrollToFilters}
 					className='icon is-large fa-stack fa-lg has-text-centered icon-button'	>
 					<i className='fas fa-angle-down' />
 				</button>
+        </div>
 			</div>
 		)
 	}
