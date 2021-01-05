@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@now/node": "^0.11.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bulma": "^0.7.4",
     "now": "^15.8.7",
     "react": "^16.12.0",
