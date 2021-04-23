@@ -12,7 +12,7 @@ $ca-palette-paper: #f2edde;
 $text-color:#3e4543;
 
 //tile
-.title, h1,h2 {
+.title, h1,h2, a {
   font-family: 'Montserrat', sans-serif, arial;
   font-weight: 600;
 }
@@ -61,9 +61,15 @@ $icon-dimensions-medium: 3rem;
 
 $radius: 0px;
 $easing: ease-in;
-$tabs-link-hover-color: #4B4453 !important;
+$tabs-link-color: #dfdedf !important;
+$tabs-link-hover-color: rgb(250, 148, 177) !important;
 
 $tabs-boxed-link-radius: 20px;
 $tabs-toggle-link-radius: 20px;
+$tabs-font-size: 0.75rem;
+$tabs-link-hover-border-bottom-color: rgb(250, 148, 177) !important;
+
+//section
+$section-padding: 8px;
 
 @import "../../node_modules/bulma/bulma.sass";
