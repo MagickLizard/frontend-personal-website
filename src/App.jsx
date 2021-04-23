@@ -11,15 +11,12 @@ const Gradient = styled.section`
 	) !important;
 	oppacity: 50%;
 `
-class App extends Component {
-	state = { loading: true }
-	render() {
+const App = () => {
 		return (
 			<div className='App'>
 						<Gradient className='hero is-primary is-fullheight has-background hero-background'>
 						</Gradient>
 			</div>
 		)
-	}
 }
 export default App

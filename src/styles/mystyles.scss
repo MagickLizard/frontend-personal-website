@@ -3,6 +3,7 @@
 .html {
   background-color: #B97AEC;
 }
+
 $brown: #FFF6FF; // text color
 $beige-light: rgb(233, 232, 227);
 $ca-palette-paper: #f2edde;
@@ -11,16 +12,16 @@ $ca-palette-paper: #f2edde;
 $text-color:#3e4543;
 
 //tile
-
 .title, h1,h2 {
   font-family: 'Montserrat', sans-serif, arial;
   font-weight: 600;
 }
-//titles
+
+// titles
 $card-color: $ca-palette-paper;
 $title-color: #9672C6;
 $subtitle-color: #fffdf5;
-//other
+// other
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $title-weight: 550;
@@ -28,7 +29,7 @@ $body-background-color: #fde2f6;
 $background: #FCEAFF;
 $secondColour: rgb(186, 137, 247);
 $light: #FFF6FF;
-//sizes
+// sizes
 $size-1: 2rem;
 $body-font-size: 0.75rem;
 
@@ -42,7 +43,7 @@ $info-invert: #6e6e6e;
 $warning-invert: #6e6e6e;
 $success: rgb(253, 215, 244);
 
-//links
+// links
 $link-hover-background: #FFA2BC;
 $link: $background; //ALL Links
 // icons for frameworks
@@ -64,10 +65,5 @@ $tabs-link-hover-color: #4B4453 !important;
 
 $tabs-boxed-link-radius: 20px;
 $tabs-toggle-link-radius: 20px;
-.heroTitle {
-  color: #9672C6 !important;
-}
-
-
 
 @import "../../node_modules/bulma/bulma.sass";
