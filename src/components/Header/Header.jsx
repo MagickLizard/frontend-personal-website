@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+
 const Bar = styled.section`
   padding-top: 16px;
-  padding-bottom: 8px;
-  height: max-height;
+  padding-bottom: 60px;
   div {
   display: contents;
   }
