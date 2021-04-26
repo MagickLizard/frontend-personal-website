@@ -12,6 +12,7 @@ const CircleStyled = styled.div(
 	oppacity: 50%;
   `
 );
+
 const SmallCircle = styled.div(
   ({ size  }) => css`
   padding-top: 16px;
@@ -23,6 +24,7 @@ const SmallCircle = styled.div(
 	oppacity: 50%;
   `
 );
+
 const Circle = ({size}) => {
 return (
   <div className={size ? 'column-is-three-quarters': 'column'}>

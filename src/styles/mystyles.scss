@@ -4,7 +4,7 @@
   background-color: #B97AEC;
 }
 
-$brown: #FFF6FF; // text color
+$brown: #9672C6; // text color
 $beige-light: rgb(233, 232, 227);
 $ca-palette-paper: #f2edde;
 
@@ -20,7 +20,7 @@ $text-color:#3e4543;
 // titles
 $card-color: $ca-palette-paper;
 $title-color: #9672C6;
-$subtitle-color: #fffdf5;
+$subtitle-color: #9672C6;
 // other
 $grey-dark: $brown;
 $grey-light: $beige-light;
@@ -59,7 +59,7 @@ $navbar-item-hover-background-color: #FFA2BC;
 $icon-dimensions-large: 5rem;
 $icon-dimensions-medium: 3rem;
 
-$radius: 0px;
+// $radius: 50px;
 $easing: ease-in;
 $tabs-link-color: #dfdedf !important;
 $tabs-link-hover-color: rgb(250, 148, 177) !important;
@@ -75,6 +75,15 @@ $section-padding: 8px;
 ///container
 $container-offset: 24px;
 //card
-$card-radius: 1rem;
+$card-radius: 50px;
+
+.card {
+  border-radius: 50px;
+}
+
+.content h1 {
+  font-size: 2.6em !important;
+}
+
 
 @import "../../node_modules/bulma/bulma.sass";
