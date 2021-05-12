@@ -5,7 +5,15 @@ import Circle from './Common/Circle';
 import Emoji from './Common/Emoji';
 
 const EmojiContainer = styled.div(
-	({ size }) => css`
+	() => css`
+	@keyframes wave-animation {
+    0%,100% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(30deg)
+    }
+}
 		font-size: 36px;
 		position: absolute;
 		top: 18px;
@@ -16,6 +24,10 @@ const EmojiContainer = styled.div(
 			position: sticky;
 			top: initial;
 			float: none;
+		}
+		@media only screen and (min-width: 1080px) {
+			animation: wave-animation 1s 10 ease-in-out;
+			animation-play-state: running;
 		}
 	`
 );
