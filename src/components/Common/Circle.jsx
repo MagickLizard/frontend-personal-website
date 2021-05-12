@@ -9,7 +9,7 @@ const CircleStyled = styled.div(
   height: ${size ? '700px' : '200px'};
   border-radius: ${size ? '400px' : '200px'};
   background-image: linear-gradient(#fffcec, rgb(224, 213, 248)) !important;
-	oppacity: 50%;
+	box-shadow: 0 1px 1px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 1%);
   `
 );
 
@@ -21,7 +21,8 @@ const SmallCircle = styled.div(
   height: 80px;
   border-radius: 50px;
   background-image: linear-gradient(#fffcec, rgb(224, 213, 248)) !important;
-	oppacity: 50%;
+	box-shadow: 0 1px 1px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 1%);
+  transform: rotate(90deg);
   `
 );
 
