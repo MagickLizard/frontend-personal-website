@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Bar = styled.section`
-  padding-top: 16px;
-  padding-bottom: 60px;
-  div {
-  display: contents;
-  }
-`
+	padding-top: 16px;
+	padding-bottom: 60px;
+	div {
+		display: contents;
+	}
+`;
 const Tabs = () => {
 	return (
-		<div class='tabs is-centered is-medium'>
+		<div className='tabs is-centered is-medium'>
 			<ul>
 				<li>
 					<a>ABOUT</a>
