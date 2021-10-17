@@ -77,7 +77,7 @@ const ContentBody = styled.div`
 `;
 
 const Header = styled.div`
-	color: #3e24a1;
+	color: #6955b5;
 	top: 42px;
 	@media only screen and (min-width: 1080px) {
 		font-size: 40px;
@@ -137,6 +137,7 @@ const HomeLayout = () => {
 			<CardContainer>
 				<Card content={CardContent()} />
 			</CardContainer>
+			{/* <ExperienceList /> */}
 		</div>
 	);
 };

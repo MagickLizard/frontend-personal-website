@@ -36,7 +36,10 @@ const SmallCircle = styled.div(
 		width: 80px;
 		height: 80px;
 		border-radius: 50px;
-		background-image: linear-gradient(#fffcec, rgb(224, 213, 248)) !important;
+		background-image: linear-gradient(
+			transparent,
+			rgb(224, 213, 248)
+		) !important;
 		box-shadow: 0 1px 1px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 1%);
 		transform: rotate(90deg);
 	`

@@ -7,7 +7,7 @@ import HomeLayout from './components/HomeLayout';
 const Gradient = styled.section`
 	position: relative;
 	width: 100%;
-	background-image: linear-gradient(#fffcec, rgb(244, 213, 248)) !important;
+	background-image: linear-gradient(#ffffff,rgb(235 225 251)) !important;
 	oppacity: 50%;
 `;
 
