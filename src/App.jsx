@@ -1,24 +1,45 @@
-import React from 'react';
-import './App.scss';
-import styled from 'styled-components';
+import React, { Component } from 'react';
+import Message from './components/HomeLayout';
+import ExperienceList from './components/Experience/ExperienceList';
 import Header from './components/Header/Header';
-import HomeLayout from './components/HomeLayout';
+import './App.scss';
+
+import styled from 'styled-components';
 
 const Gradient = styled.section`
 	position: relative;
 	width: 100%;
-	background-image: linear-gradient(#ffffff,rgb(235 225 251)) !important;
-	oppacity: 50%;
-`;
-
-const App = () => {
-	return (
-		<div className='App'>
-			<Gradient className='hero is-primary is-fullheight has-background hero-background'>
-				<Header />
-				<HomeLayout />
-			</Gradient>
-		</div>
-	);
-};
+	background-image: linear-gradient(
+		${(props) => props.background}deg,
+		#ffa2bc,
+		#b97aec
+	) !important;
+	}
+`
+class App extends Component {
+	state = { x: 0, y: 0, direction: '', loading: false }
+	_onMouseMove(event) {
+		this.setState({ x: event.screenX, y: event.screenY })
+	}
+	render() {
+		return (
+			<div className='App'>
+				<div
+					className={`control ${
+						this.state.loading ? 'is-large is-loading' : ''
+					}`}
+				>
+					<Gradient
+						className='hero is-primary is-fullheight has-background hero-background'
+						onMouseMove={this._onMouseMove.bind(this)}
+						background={this.state.y}
+					>
+     <Header />
+						<Message/>
+					</Gradient>
+				</div>
+			</div>
+		)
+	}
+}
 export default App;
